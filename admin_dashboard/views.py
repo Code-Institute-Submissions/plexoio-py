@@ -1,6 +1,6 @@
 # Standard Library Imports
 import os
-
+import boto3
 # Django Core Imports
 from django import forms
 from django.contrib import messages
@@ -8,13 +8,14 @@ from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth.mixins import UserPassesTestMixin
 from django.contrib.auth.views import PasswordChangeView
 from django.core.exceptions import PermissionDenied
-from django.http import HttpResponse, Http404
+from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, View
 from django.views.generic.edit import UpdateView, DeleteView
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+from django.conf import settings
 
 # Local App Imports
 from homepage.models import UserProfile, STATUS, Comment, Like
@@ -175,12 +176,40 @@ class AdminDownloadCreation(AdminRequiredMixin, View):
 
 @method_decorator(login_required, name='dispatch')
 class DownloadWithToken(View):
-    """ Download file protection with: user is_authenticated,
-    user has placed an order, secret UUID token for file name,
-    str token for url name & renaming of the file when downloading with
-    Download model file_name.
-    All designed to hide the UUID token as the actual file name.
-    Remember to include permission on server production."""
+    """
+    DownloadWithToken View facilitates secure and rate-limited file
+    downloads from an AWS S3 bucket.
+    It generates a temporary pre-signed URL, only accessible to authenticated
+    users who have placed an order.
+
+    Security Features:
+        - Authentication Required: Users must be logged in to access
+        the download.
+        - Order Verification: Ensures the user has placed at least one
+        order before allowing the download.
+        - Rate Limiting: Utilizes rate limiting to prevent abuse.
+        - Token Verification: Uses a secret UUID token to identify the
+        file to download, enhancing security.
+
+    Workflow:
+        1. A GET request is initiated with a download token as a URL parameter.
+        2. Rate-limiting is applied to the request.
+        3. The download instance associated with the token is fetched.
+        4. Several validation checks are performed:
+            - Check the validity of the download instance (e.g., yearly
+            availability).
+            - Verify user authentication and order placement.
+        5. If all checks pass, a pre-signed URL is generated for the file
+        stored in the S3 bucket.
+        6. The user is redirected to this pre-signed URL to download the file.
+
+    Expiration:
+        - The pre-signed URL is set to expire after 1 hour, after which a new
+        URL must be generated.
+
+    Note:
+        Make sure to set appropriate permissions in your production server.
+    """
 
     def get(self, request, download_token, *args, **kwargs):
         try:
@@ -195,8 +224,9 @@ class DownloadWithToken(View):
 
             # If yearly availability has been reached
             if not download_instance.is_valid():
-                messages.error(request, '''Awaiting for update:
-                 please contact the support team.''')
+                messages.error(
+                    request, '''Awaiting for update:
+                    please contact the support team.''')
                 raise PermissionDenied(
                     "You are not authorized to access this download.")
 
@@ -210,31 +240,22 @@ class DownloadWithToken(View):
                 raise PermissionDenied(
                     "You must have placed an order to access this download.")
 
-            # Construct the file path based on the 'file' field
-            file_path = download_instance.file.path
+            # Generate a signed URL for the S3 object
+            s3_client = boto3.client(
+                's3', region_name=settings.AWS_S3_REGION_NAME)
 
-            if os.path.exists(file_path):
-                # Get file extension
-                file_extension = os.path.splitext(
-                    download_instance.file.name)[1]
+            file_name_in_s3 = f'media/{download_instance.file.name}'
+            signed_url = s3_client.generate_presigned_url(
+                'get_object',
+                Params={
+                    'Bucket': settings.AWS_STORAGE_BUCKET_NAME,
+                    'Key': file_name_in_s3,
+                },
+                ExpiresIn=3600  # URL expires in 1 hour
+            )
 
-                # File name
-                filename = download_instance.file_name
-
-                # Serve the file
-                with open(file_path, 'rb') as file:
-                    response = HttpResponse(
-                        # direct download, do not display in the browser
-                        file.read(), content_type='application/octet-stream')
-                    response['Content-Disposition'] = f'''
-                    attachment; filename="{filename}"'''
-
-                # Add file extension
-                if file_extension:
-                    response['Content-Disposition'] += file_extension
-                return response
-            else:
-                raise Http404("Download file not found.")
+            # Redirect to the signed S3 URL
+            return HttpResponseRedirect(signed_url)
 
         except Download.DoesNotExist:
             raise Http404("Download not found.")
