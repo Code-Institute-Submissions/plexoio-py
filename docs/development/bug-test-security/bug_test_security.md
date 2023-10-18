@@ -113,6 +113,8 @@ We have run the following manual tests:
 
     ### Lighthouse
     Lighthouse offered comprehensive analysis across various aspects of our application. Although its use wasn't obligatory, we paired it with GT-Metrix to guarantee a high-quality product delivery. The outcomes were in line with our expectations.
+    
+    ![Lighthouse test image](../../assets/img/lighthouse.png)
 
     ### GTMetrix
     Leveraging its distinct capabilities, GT-Metrix became an integral component of our testing regimen. It furnished us with invaluable recommendations, all of which were considered non-critical for this version. The app is performing optimally and is primed for release.
