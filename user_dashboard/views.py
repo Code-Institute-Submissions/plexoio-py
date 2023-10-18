@@ -13,7 +13,7 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
 # Local Imports
-from homepage.models import UserProfile, Like
+from homepage.models import UserProfile, Like, Comment
 
 # User Dashboard
 
@@ -125,7 +125,8 @@ class BuyerLikeBaseListView(BuyerRequiredMixin, ListView):
 
     def get_queryset(self):
         """ Return comment instances ordered by creation date."""
-        likes = Like.objects.filter(liker=self.request.user).order_by('-created_on')
+        likes = Like.objects.filter(
+            liker=self.request.user).order_by('-created_on')
         return likes
 
 
@@ -133,4 +134,25 @@ class BuyerLikeBaseListView(BuyerRequiredMixin, ListView):
 class BuyerLikeList(BuyerLikeBaseListView):
     """ Read all created like instances template """
     template_name = 'user-dashboard/all_likes.html'
-    context_object_name = 'user_all_likes'
+    context_object_name = 'buyer_all_likes'
+
+# READ Comments
+
+
+@method_decorator(login_required, name='dispatch')
+class BuyerCommentBaseListView(BuyerRequiredMixin, ListView):
+    """ Base view for listing Comment instances. """
+    model = Comment
+
+    def get_queryset(self):
+        """ Return comment instances ordered by creation date."""
+        comments = Comment.objects.filter(
+            writer=self.request.user).order_by('-created_on')
+        return comments
+
+
+@method_decorator(login_required, name='dispatch')
+class BuyerCommentList(BuyerCommentBaseListView):
+    """ Read all created comment instances template """
+    template_name = 'user-dashboard/all_comments.html'
+    context_object_name = 'buyer_all_comments'
