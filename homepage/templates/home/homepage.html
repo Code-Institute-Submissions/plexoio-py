@@ -30,7 +30,7 @@
                 Developers. <br> Download yours now!</p>
             <a class="btn btn-primary" href="https://github.com/plexoio/py" target="_blank"
                 aria-label="Plexosoft GitHub Page">Know
-                More</a>
+                More About Plexosoft</a>
         </div>
     </aside>
 
@@ -176,13 +176,13 @@
                                 {% if item.instance == 0 %}
                                 <p class="my-0 fs-6 text-justify mt-2"> {{ item.excerpt|safe }}...
                                     <a class="read-more" href="{% url 'single_product' item.slug %}">
-                                        Read More
+                                        Read More on {{ item.title }}
                                     </a>
                                 </p>
                                 {% elif item.instance == 1 %}
                                 <p class="my-0 fs-6 text-justify mt-2"> {{ item.excerpt|safe }}...
                                     <a class="read-more" href="{% url 'single_service' item.slug %}">
-                                        Read More
+                                        Read More on {{ item.title }}
                                     </a>
                                 </p>
                                 {% endif %}
@@ -224,7 +224,7 @@
         </div>
         {% if forloop.counter|divisibleby:3 %}
         <div class="col-12 text-center">
-            <a href="{% url 'combined_items_all' %}" class="btn btn-primary w-auto see-more fs-5">See more</a>
+            <a href="{% url 'combined_items_all' %}" class="btn btn-primary w-auto see-more fs-5">More Options</a>
         </div>
     </article>
     <div class="row">
@@ -305,7 +305,7 @@
                                 <!-- Short Description -->
                                 <p class="my-0 fs-6 text-justify mt-2"> {{ product.excerpt|safe }}...
                                     <a class="read-more" href="{% url 'single_product' product.slug %}">
-                                        Read More
+                                        Read More on {{ product.title }}
                                     </a>
                                 </p>
                             </div>
@@ -339,7 +339,7 @@
         </div>
         {% if forloop.counter|divisibleby:3 %}
         <div class="col-12 text-center">
-            <a href="{% url 'product_all' %}" class="btn btn-primary w-auto see-more fs-5">See more</a>
+            <a href="{% url 'product_all' %}" class="btn btn-primary w-auto see-more fs-5">More Products</a>
         </div>
     </article>
     <div class="row">
@@ -418,7 +418,7 @@
                                 <!-- Short Description -->
                                 <p class="my-0 fs-6 text-justify mt-2"> {{ service.excerpt|safe }}...
                                     <a class="read-more" href="{% url 'single_service' service.slug %}">
-                                        Read More
+                                        Read More on {{ service.title }}
                                     </a>
                                 </p>
                             </div>
@@ -453,7 +453,7 @@
         </div>
         {% if forloop.counter|divisibleby:3 %}
         <div class="col-12 text-center">
-            <a href="{% url 'service_all' %}" class="btn btn-primary w-auto see-more fs-5">See more</a>
+            <a href="{% url 'service_all' %}" class="btn btn-primary w-auto see-more fs-5">More Services</a>
         </div>
     </article>
     <div class="row">
