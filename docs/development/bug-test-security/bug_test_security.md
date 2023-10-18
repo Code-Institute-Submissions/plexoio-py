@@ -150,7 +150,7 @@ We have run the following manual tests:
     For other issues, we suggest refreshing the page or clearing cache files. If problems persist, it's likely not an issue with the Plexosoft project but may pertain to third-party services or the specific settings and capabilities of your device. If the issue comes from our end the we will fix it in future iterations.
 
 ## Security
-??? tip "Security Tips"
+??? tip "Security Tips?"
 
     Concise explanation of why Django, Bootstrap, and PostgreSQL are considered safe:
 
