@@ -62,31 +62,35 @@ Reflecting on the project, it's clear that each feature offers room for enhancem
     ![Signup](../../assets/img/signup.png)
 
 
-### User Dashboard
+??? info "User Dashboard"
+    ### User Dashboard
 
-![User Dashboard](../../assets/img/user_dashboard.png)
+    ![User Dashboard](../../assets/img/user_dashboard.png)
 
-#### My Settings
-Here, users can modify their personal information, preferences, and limited account settings.
+    #### My Settings
+    Here, users can modify their personal information, preferences, and limited account settings.
 
-![Settings](../../assets/img/settings.png)
+    ![Settings](../../assets/img/settings.png)
 
-#### My Orders
-This section displays a list of orders placed by the user, showing their status, the ability to update them, and other important information.
+    #### My Orders
+    This section displays a list of orders placed by the user, showing their status, the ability to update them, and other important information.
 
-![My Orders](../../assets/img/orders.png)
+    ![My Orders](../../assets/img/orders.png)
 
-#### My Likes & My Comments
-Provides an overview of the likes & comments of the user, detailing their action taken.
+    #### My Likes & My Comments
+    Provides an overview of the likes & comments of the user, detailing their action taken.
 
-![My Likes & Comments image](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual15.png)
+    #### Likes
+    ![My Likes](../../assets/img/likes.png)
 
-#### My Role
-Describes the user's permissions, roles, and capabilities within the platform.
+    #### Comments
+    ![My Comments](../../assets/img/comments.png)
 
-![My Role](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual16.png)
+    #### My Role
+    Describes the user's permissions, roles, and capabilities within the platform.
 
----
+    ![My Role](../../assets/img/user_role.png)
+
 
 ### Admin Dashboard
 
