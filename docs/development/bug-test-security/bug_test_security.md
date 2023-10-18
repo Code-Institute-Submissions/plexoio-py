@@ -124,8 +124,12 @@ At the moment, social media buttons direct users to the primary pages, intended 
 
 There were some features such as the Like functionality that costed us a lot of time to figure out. At the end we opted for using AJAX and Json responses. All issues were solved.
 
+#### e) Download File Functionality
+
+We implemented AWS S3 towards the end of the project, which initially led to an internal server error when users attempted to download purchased files. This issue has been resolved. The system now generates a unique link for downloading, which remains valid for 1 hour before expiring. This mechanism helps protect valuable files from unauthorized access. Further enhancements to secure URL files are planned for future iterations/releases.
+
 #### Other Potential Bugs
-For other issues, we suggest refreshing the page or clearing cache files. If problems persist, it's likely not an issue with the Plexosoft project but may pertain to third-party services or the specific settings and capabilities of your device.
+For other issues, we suggest refreshing the page or clearing cache files. If problems persist, it's likely not an issue with the Plexosoft project but may pertain to third-party services or the specific settings and capabilities of your device. If the issue comes from our end the we will fix it in future iterations.
 
 ## Security
 
