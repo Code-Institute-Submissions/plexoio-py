@@ -5,7 +5,7 @@ We are extremely pleased with our accomplishments, particularly given initial co
 Reflecting on the project, it's clear that each feature offers room for enhancement and future development, thanks to its modular structure. This iteration introduces simplified design elements and includes all CRUD functionalities: creating products, services, and downloads (admin); reading frontend items (admin & user); updating items (admin); deleting accounts (users); and consistently providing appropriate feedback.
 
 
-??? info "Homepage Features"
+??? info "Homepage"
     ## Homepage
 
     ### Header & CTA Section
@@ -29,7 +29,7 @@ Reflecting on the project, it's clear that each feature offers room for enhancem
     ![Service Cards & See More](../../assets/img/service_instances.png)
 
     ### Footer
-    Contains essential links, platform information, and other resources for users to navigate and understand the platform better.
+    Contains essential links, platform information, newsletter signup, and other resources for users to navigate and understand the platform better.
 
     ![Footer](../../assets/img/footer.png)
 
@@ -40,7 +40,7 @@ Reflecting on the project, it's clear that each feature offers room for enhancem
     ![Product/Service Page](../../assets/img/product_service_single.png)
 
     ### Card Features
-    This section details the specifics of the instance, including its description, price, category, likes, comments, and more.
+    This section details the specifics of the instance, including its description, price, category, likes, comments, newsletter signup and more.
 
     ### Add to Cart, Like & Comment Feedback
     This feature informs users of the outcome of their actions related to the instance they selected.
@@ -91,70 +91,74 @@ Reflecting on the project, it's clear that each feature offers room for enhancem
 
     ![My Role](../../assets/img/user_role.png)
 
+??? info "Admin Dashboard"
+    ### Admin Dashboard
 
-### Admin Dashboard
+    ![Admin Dashboard](../../assets/img/admin_dashboard.png)
 
-![Admin Dashboard](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual17.png)
+    #### My Settings
+    In this section, admins can adjust their personal information, preferences, and account settings, which are more extensive compared to regular users.
 
-#### My Settings
-In this section, admins can adjust their personal information, preferences, and account settings, which are more extensive compared to regular users.
+    ![Settings](../../assets/img/admin_settings.png)
 
-![Settings](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual18.png)
+    #### User Management (Future Feature)
+    - NA
 
-#### User Management (Future Feature)
-- NA
+    #### Order Management
+    This page displays all created orders. Edit and details capabilities for each entry are available. Additionally, there is a cleaning button for removing old, unfinished orders.
 
-#### Order Management
-This page displays all created orders. Edit and details capabilities for each entry are available. Additionally, there is a cleaning button for removing old, unfinished orders.
+    ![Created Orders](../../assets/img/admin_orders.png)
 
-![Created Orders](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual19.png)
+    #### Asset Management
+    Here you'll find options to manage products and services. This section shows how many items have been created and also provides the option to create new ones.
 
-#### Asset Management
-Here you'll find options to manage products and services. This section shows how many items have been created and also provides the option to create new ones.
+    ##### Product & Service Control
+    ![Product Control](../../assets/img/admin_product_control.png)
 
-![Pending](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual20.png)
+    ##### Product & Service Create
+    ![Product Create](../../assets/img/admin_product_create.png)
 
-#### File Management
-In this section, admins can manage or create download instances that can then be linked to their created products and services.
+    #### File Management
+    In this section, admins can manage or create download instances that can then be linked to their created products and services.
 
-![File Management Image](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual20.png)
+    ##### File Control
+    ![File Management Control](../../assets/img/admin_file.png)
 
-#### Comment & Like Management
-This area allows the admin to view and manage comments as well as theoretically control likes. The like-update function is active, although changes are not reflected elsewhere in this iteration.
+    ##### File Upload
+    ![File Management Upload](../../assets/img/admin_file_upload.png)
 
-![Comment & Like Image](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual21.png)
+    #### Comment & Like Management
+    This area allows the admin to view and manage comments as well as theoretically control likes. The like-update function is active, although changes are not reflected elsewhere in this iteration.
 
-#### My Role
-This section details the administrative permissions and capabilities available to the user.
+    ##### Comment
+    ![Comment Image](../../assets/img/admin_comments.png)
 
-![My Role](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual23.png)
+    ##### Like
+    ![Like Image](../../assets/img/admin_likes.png)
 
----
+    #### My Role
+    This section details the administrative permissions and capabilities available to the user.
 
-## Digital Downloads Marketplace Logic
+    ![My Role](../../assets/img/admin_role.png)
 
-#### User Purchases a Product or Service
-This process allows users to make purchases using Stripe and create orders. After a successful payment, users can comment and like the product or service they purchased, as well as download the associated file from their user dashboard.
+??? info "Marketplace Logic"
+    ## Digital Downloads Marketplace Logic
 
-![Purchase Event](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual13.png)
+    #### User Purchases a Product or Service
+    This process allows users to make purchases using Stripe and create orders. After a successful payment, users can comment and like the product or service they purchased, as well as download the associated file from their user dashboard.
 
-#### Order Instances
-This feature allows users to visualize their orders, even if the order was not completed.
+    #### Order Instances
+    This feature allows users to visualize their orders, even if the order was not completed.
 
-![Order Instances](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual24.png)
+??? info "Accountability"
+    ## Support
 
----
+    ### FAQ
+    A section containing frequently asked questions about the platform. It may also contain videos to assist users in troubleshooting common issues and learning more about the marketplace.
 
-## Support
+    ![FAQ](../../assets/img/faq.png)
 
-### FAQ
-A section containing frequently asked questions about the platform. It may also contain videos to assist users in troubleshooting common issues and learning more about the marketplace.
+    ### Contact
+    Provides users with the means to get in touch with platform support for technical issues, feedback, or inquiries.
 
-![FAQ](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual25.png)
-
-### Contact
-Provides users with the means to get in touch with platform support for technical issues, feedback, or inquiries.
-
-![Contact](https://github.com/plexoio/py/blob/main/documentation/assets/img/actual-features/actual26.png)
-
----
+    ![Contact](../../assets/img/contact.png)

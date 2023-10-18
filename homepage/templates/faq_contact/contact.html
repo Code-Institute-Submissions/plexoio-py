@@ -33,7 +33,7 @@
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input name="from_name"
-                            value="{% if user.is_authenticated %}{{ request.user.first_name }} {% endif %}"
+                            value="{% if user.is_authenticated %}{{ request.user.first_name }} {{ request.user.last_name }} ({{ request.user }}) {% endif %}"
                             class="form-control" id="name" aria-describedby="name" required>
                         <div id="nameHelp" class="form-text">Autofilled if you are already registered with Plexosoft.
                         </div>
