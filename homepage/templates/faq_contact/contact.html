@@ -32,7 +32,7 @@
                     {% csrf_token %}
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input name="from_name"
+                        <input autocomplete="name" name="from_name"
                             value="{% if user.is_authenticated %}{{ request.user.first_name }} {{ request.user.last_name }} ({{ request.user }}) {% endif %}"
                             class="form-control" id="name" aria-describedby="name" required>
                         <div id="nameHelp" class="form-text">Autofilled if you are already registered with Plexosoft.
@@ -40,7 +40,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email Address</label>
-                        <input name="emailaddress" type="email"
+                        <input autocomplete="email" name="emailaddress" type="email"
                             value="{% if user.is_authenticated %}{{ request.user.email }} {% endif %}"
                             class="form-control" id="email" aria-describedby="emailHelp" required>
                         <div id="emailHelp" class="form-text">We value your privacy and will never share your email.
@@ -48,13 +48,13 @@
                     </div>
                     <div class="mb-3">
                         <label for="subject" class="form-label">Subject</label>
-                        <input name="the_subject" type="text" value="Plexosoft Support: " class="form-control"
+                        <input autocomplete="on" name="the_subject" type="text" value="Plexosoft Support: " class="form-control"
                             id="subject" aria-describedby="subjectHelp" required>
                         <div id="subjectHelp" class="form-text">Please provide a clear subject line.</div>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
-                        <textarea name="the_idea" type="text" class="form-control" id="message" rows="7" cols="7"
+                        <textarea autocomplete="on" name="the_idea" type="text" class="form-control" id="message" rows="7" cols="7"
                             aria-describedby="messageHelp" required>Dear Plexosoft support team, </textarea>
                         <div id="messageHelp" class="form-text">Feel free to express your ideas or issues.</div>
                     </div>
