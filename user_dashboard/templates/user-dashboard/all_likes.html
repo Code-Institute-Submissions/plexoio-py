@@ -1,0 +1,57 @@
+{% extends "user-dashboard/base.html" %}
+{% block title %}- All Likes{% endblock %}
+
+{% block content%}
+<main class="pb-5 mb-5">
+    <div class="container-fluid p-4 pt-0 pb-5">
+        <h1 class="mt-4">All Likes</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item active">All My Likes </li>
+        </ol>
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Created Likes
+            </div>
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead>
+                        <tr>
+                            <th>Liker</th>
+                            <th>Instance</th>
+                            <th>Item</th>
+                            <th>Created on</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Liker</th>
+                            <th>Instance</th>
+                            <th>Item</th>
+                            <th>Created on</th>
+                            <th>Status</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        {% for like in user_all_likes %}
+                        <tr>
+                            <td>{{ like.liker }}</td>
+                            <td>{{ like.get_instance_display }}</td>
+                            <td>{% if like.service %}
+                                {{ like.service }}
+                                {% else %}
+                                {{ like.product }}
+                                {% endif %}
+                            </td>
+                            <td>{{ like.created_on }}</td>
+                            <td>{{ like.get_status_display }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

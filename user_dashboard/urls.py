@@ -4,7 +4,8 @@ from .views import (BuyerDashboard,
                     BuyerSettings,
                     BuyerDelete,
                     BuyerPasswordChange,
-                    BuyerRole)
+                    BuyerRole,
+                    BuyerLikeList)
 
 urlpatterns = [
     path('account/user/', BuyerDashboard.as_view(),
@@ -16,5 +17,7 @@ urlpatterns = [
          name='buyer_change_password'),
     path('account/user/role/', BuyerRole.as_view(),
          name='buyer_role'),
+    path('account/user/likes/', BuyerLikeList.as_view(),
+         name='buyer_all_likes'),
 
 ]

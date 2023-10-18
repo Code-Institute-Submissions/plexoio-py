@@ -549,7 +549,7 @@ class LikeList(LikeBaseListView):
     template_name = 'admin-dashboard/all_likes.html'
     context_object_name = 'admin_all_likes'
 
-# # UPDATE Comments
+# # UPDATE Like
 
 
 @method_decorator(login_required, name='dispatch')

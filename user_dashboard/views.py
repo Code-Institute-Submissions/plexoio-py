@@ -1,6 +1,6 @@
 # Django Imports
 from django.contrib.auth.mixins import UserPassesTestMixin
-from django.views import generic
+from django.views.generic import ListView, DetailView
 from django.shortcuts import get_object_or_404, redirect
 from django import forms
 from django.views.generic.edit import UpdateView, DeleteView
@@ -13,7 +13,7 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
 # Local Imports
-from homepage.models import UserProfile
+from homepage.models import UserProfile, Like
 
 # User Dashboard
 
@@ -28,7 +28,7 @@ class BuyerRequiredMixin(UserPassesTestMixin):
 
 
 @method_decorator(login_required, name='dispatch')
-class BuyerDashboard(BuyerRequiredMixin, generic.DetailView):
+class BuyerDashboard(BuyerRequiredMixin, DetailView):
     """Display the dashboard for users with 'role 0'."""
     model = UserProfile
     template_name = 'user-dashboard/dashboard.html'
@@ -114,3 +114,23 @@ class BuyerPasswordChange(BuyerRequiredMixin, PasswordChangeView):
 class BuyerRole(BuyerDashboard):
     """Redender view for role info display"""
     template_name = 'user-dashboard/role.html'
+
+# READ Likes
+
+
+@method_decorator(login_required, name='dispatch')
+class BuyerLikeBaseListView(BuyerRequiredMixin, ListView):
+    """ Base view for listing Like instances. """
+    model = Like
+
+    def get_queryset(self):
+        """ Return comment instances ordered by creation date."""
+        likes = Like.objects.filter(liker=self.request.user).order_by('-created_on')
+        return likes
+
+
+@method_decorator(login_required, name='dispatch')
+class BuyerLikeList(BuyerLikeBaseListView):
+    """ Read all created like instances template """
+    template_name = 'user-dashboard/all_likes.html'
+    context_object_name = 'user_all_likes'
