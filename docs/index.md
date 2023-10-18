@@ -1,6 +1,8 @@
 # Welcome to Plexosoft Documentation
 
 [GitHub Repository](https://github.com/plexoio/py){ .md-button .md-button--primary }
+[Deployed Site](https://plexosoft-2714f270803c.herokuapp.com/){ .md-button .md-button--primary }
+[Author's LinkedIn](https://www.linkedin.com/in/arellanofrank/){ .md-button .md-button--info }
 
 ???+ info "Project Life Cycle"
 
@@ -10,9 +12,7 @@
     For a deeper dive into our progress, check out our [Github Commits](https://github.com/plexoio/py/commits/main?after=d40aa15cae7f956277a2c9de73eb659c5a2a151a+34&branch=main&qualified_name=refs%2Fheads%2Fmain).
 
 ??? danger "Temp: Watchout"
-    - This page details
-    - "Actual Features," "Future Features," and "Tech Used"
-    - Software Start Docs
+    - "Tech Used"
     - Duplicate at the end to align to Code Institute if needed
 
 ## Index

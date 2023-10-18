@@ -117,9 +117,11 @@ We have run the following manual tests:
     ![Lighthouse test image](../../assets/img/lighthouse.png)
 
     ### GTMetrix
-    Leveraging its distinct capabilities, GT-Metrix became an integral component of our testing regimen. It furnished us with invaluable recommendations, all of which were considered non-critical for this version. The app is performing optimally and is primed for release.
-
-    - [GTMetrix](https://gtmetrix.com/)
+    Leveraging its distinct capabilities, GT-Metrix became an integral component of our testing regimen. It furnished us with invaluable recommendations, all of which we will considere in the next iteration. The app is performing okey and is primed for release.
+    
+    ??? info "GTMetrix Images"
+         ![GTMetrix test result image](../../assets/img/gtmetrix0.jpeg)
+         ![GTMetrix test result image](../../assets/img/gtmetrix0.jpeg)
 
     ### Responsiveness
 
