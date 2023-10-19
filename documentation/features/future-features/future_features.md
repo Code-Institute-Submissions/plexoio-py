@@ -1,4 +1,4 @@
-## Future Features
+## Future Features Explained
 
 ### 1. Security Enhancements
 - **AWS S3 File Protection**: Implement multiple layers of security, including role-based and token-based authentication, to restrict file access on AWS S3, even for admin users.

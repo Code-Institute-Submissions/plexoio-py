@@ -1,4 +1,4 @@
-# Actual Features Explained
+## Actual Features Explained
 
 We are extremely pleased with our accomplishments, particularly given initial concerns about time constraints due to personal reasons, as well as external challenges like government decisions and unexpected changes toward the end.
 

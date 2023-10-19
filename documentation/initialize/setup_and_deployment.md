@@ -1,4 +1,9 @@
-## Extended Version
+## Workspace Set Up & Deployment Process
+
+### Extended Version
+
+<details>
+<summary>Extended Version</summary>
 
 **1. Initial Setup:**
 
@@ -165,7 +170,12 @@
 
 - Finally, deploy to Heroku!
 
-## Simplified Version
+</details>
+
+### Simplified Version
+
+<details>
+<summary>Simplified Version</summary>
 
 1. `pip3 install 'django<4' gunicorn psycopg2`
 
@@ -249,3 +259,5 @@
     ```
 
 34. Deploy your project to Heroku.
+
+</details>
