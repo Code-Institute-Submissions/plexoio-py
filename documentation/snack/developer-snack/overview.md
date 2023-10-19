@@ -23,3 +23,16 @@ Welcome to the **Developer's Snack Section**, your one-stop destination for quic
 - **Tailored for Plexosoft**: Every piece of information is tailored to fit the unique development environment and challenges faced in the Plexosoft project.
 
 So go ahead, dig in, and make your development journey in the Plexosoft project smoother, one snack at a time!
+
+## Index
+
+- [Make Documentation](snack/mkdoc/mkdoc.md)
+- [Django Admin & Summernote](snack/developer-snack/development_reminder.md)
+- [Google Auth Installation](snack/developer-snack/google_auth.md)
+- [Common Bugs](snack/developer-snack/common_bugs.md)
+- [Naming Convention](snack/developer-snack/naming_convention.md)
+- [Lambda Convention](snack/developer-snack/lambda.md)
+- [Database & Django Shell](snack/developer-snack/shell_database.md)
+- [Download Security](snack/developer-snack/download_security.md)
+- [Session Delete/Print](snack/developer-snack/session_delete_and_print.md)
+- [NULL After User Deletion](snack/developer-snack/null_after_user_deletion.md)
