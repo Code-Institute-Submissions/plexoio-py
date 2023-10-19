@@ -119,19 +119,8 @@
                             <div class="mb-3">
                                 <label for="lineitem" class="form-label"><strong>Items {{ order.lineitems.quantity }}
                                     </strong></label>
-                                <select name="lineitem" class="form-control" id="lineitem" multiple="multiple" disabled>
-                                    {% for lineitem in order.lineitems.all %}
-                                    {% if lineitem.service %}
-                                    <option>{{ lineitem.service.get_instance_display }}: {{ lineitem.service.title }}
-                                        (€{{ lineitem.lineitem_total }} x {{ lineitem.quantity }})
-                                    </option>
-                                    {% else %}
-                                    <option>{{ lineitem.product.get_instance_display }}: {{ lineitem.product.title }}
-                                        (€{{ lineitem.lineitem_total }} x {{ lineitem.quantity }})
-                                    </option>
-                                    {% endif %}
-                                    {% endfor %}
-                                </select>
+                                <textarea name="lineitem" class="form-control" id="lineitem"
+                                    disabled>{% for lineitem in order.lineitems.all %}{% if lineitem.service %}{{ lineitem.service.get_instance_display }}: {{ lineitem.service.title }} (€{{ lineitem.lineitem_total }} x {{ lineitem.quantity }}){% else %}{{ lineitem.product.get_instance_display }}: {{ lineitem.product.title }} (€{{ lineitem.lineitem_total }} x {{ lineitem.quantity }}){% endif %}{% endfor %}</textarea>
                                 {% if code.code.errors %}
                                 <div class="errors">{{ code.code.errors }}</div>
                                 {% endif %}

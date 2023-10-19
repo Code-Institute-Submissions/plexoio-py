@@ -36,9 +36,11 @@ Explore Plexosoft and discover a world of software possibilities designed with y
 ---
 
 ## Documentation
-View full documentation at:
+View full documentation on Github Pages using Mkdocs (OPTIONAL):
 
 [![Plexosoft Documentation](https://img.shields.io/badge/View-Plexosoft_Documentation-blue)](https://plexoio.github.io/py/) 
+
+
 
 ## Access & Credentials
 
