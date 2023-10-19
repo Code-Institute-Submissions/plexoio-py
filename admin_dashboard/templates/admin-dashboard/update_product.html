@@ -217,7 +217,7 @@
                             <div class="mb-3">
                                 <label for="image_url" class="form-label"><strong>Image URL</strong></label>
                                 <input type="link" name="image_url" class="form-control" id="image_url"
-                                    value="{{ product.image_url }}" required>
+                                    value="{{ product.image_url }}">
                                 {% if product.image_url.errors %}
                                 <div class="errors">{{ product.image_url.errors }}</div>
                                 {% endif %}

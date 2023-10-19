@@ -28,7 +28,7 @@
 
                     <!-- Card Thumbnail -->
                     <a href="{% url 'single_service' service.slug %}" class="row bg-thumbnail d-block">
-                        <div class="col-12 bg-thumbnail-image" style="background-image: url('{{ service.image_url }}')">
+                        <div class="col-12 bg-thumbnail-image" style="background-image: url('{% if service.image %}{{ service.image.url }}{%elif service.image_url %}{{ service.image_url }}{%else%}https://placehold.co/600x400/EEE/31343C{%endif%}')">
                             <div class="d-flex justify-content-between">
                                 <span class="thumbnail-tags-left">{{ service.get_instance_display }}</span>
                                 <span class="thumbnail-tags-right">{{ service.price }} $</span>

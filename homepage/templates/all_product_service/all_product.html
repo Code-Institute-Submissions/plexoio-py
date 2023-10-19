@@ -98,7 +98,7 @@
 
                 <!-- Card Thumbnail -->
                 <a href="{% url 'single_product' product.slug %}" class="row bg-thumbnail d-block">
-                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{{ product.image_url }}')">
+                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{% if product.image %}{{ product.image.url }}{%elif product.image_url %}{{ product.image_url }}{%else%}https://placehold.co/600x400/EEE/31343C{%endif%}')">
                         <div class="d-flex justify-content-between">
                             <span class="thumbnail-tags-left">{{ product.get_instance_display }}</span>
                             <span class="thumbnail-tags-right price">{{ product.price }} $</span>

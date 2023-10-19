@@ -265,8 +265,7 @@
                                     <strong>{{ form.image_url.label }}</strong>
                                 </label>
                                 <input type="url" name="{{ form.image_url.name }}" class="form-control"
-                                    id="{{ form.image_url.id_for_label }}" value="{{ form.image_url.value|default:'' }}"
-                                    required>
+                                    id="{{ form.image_url.id_for_label }}" value="{{ form.image_url.value|default:'' }}">
                                 {% if form.image_url.errors %}
                                 <div class="errors">{{ form.image_url.errors }}</div>
                                 {% endif %}

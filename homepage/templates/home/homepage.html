@@ -119,7 +119,7 @@
                 <!-- Card Thumbnail -->
                 <a href="{% if item.instance == 0 %}{% url 'single_product' item.slug %}{% else %}{% url 'single_service' item.slug %}{% endif %}"
                     class="row bg-thumbnail d-block">
-                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{{ item.image_url }}')">
+                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{% if item.image %}{{ item.image.url }}{%elif item.image_url %}{{ item.image_url }}{%else%}https://placehold.co/600x400/EEE/31343C{%endif%}')">
                         <div class="d-flex justify-content-between">
                             <span class="thumbnail-tags-left">{{ item.get_instance_display }}</span>
                             <span class="thumbnail-tags-right">{{ item.price }} $</span>
@@ -260,7 +260,7 @@
 
                 <!-- Card Thumbnail -->
                 <a href="{% url 'single_product' product.slug %}" class="row bg-thumbnail d-block">
-                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{{ product.image_url }}')">
+                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{% if product.image %}{{ product.image.url }}{%elif product.image_url %}{{ product.image_url }}{%else%}https://placehold.co/600x400/EEE/31343C{%endif%}')">
                         <div class="d-flex justify-content-between">
                             <span class="thumbnail-tags-left">{{ product.get_instance_display }}</span>
                             <span class="thumbnail-tags-right">{{ product.price }} $</span>
@@ -372,7 +372,7 @@
 
                 <!-- Card Thumbnail -->
                 <a href="{% url 'single_service' service.slug %}" class="row bg-thumbnail d-block">
-                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{{ service.image_url }}')">
+                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{% if service.image %}{{ service.image.url }}{%elif service.image_url %}{{ service.image_url }}{%else%}https://placehold.co/600x400/EEE/31343C{%endif%}')">
                         <div class="d-flex justify-content-between">
                             <span class="thumbnail-tags-left">{{ service.get_instance_display }}</span>
                             <span class="thumbnail-tags-right">{{ service.price }} $</span>

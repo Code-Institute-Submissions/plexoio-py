@@ -107,7 +107,7 @@
                 <!-- Card Thumbnail -->
                 {% if item.instance == 0 %}
                 <a href="{% url 'single_product' item.slug %}" class="row bg-thumbnail d-block">
-                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{{ item.image_url }}')">
+                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{% if item.image %}{{ item.image.url }}{%elif item.image_url %}{{ item.image_url }}{%else%}https://placehold.co/600x400/EEE/31343C{%endif%}')">
                         <div class="d-flex justify-content-between">
                             <span class="thumbnail-tags-left">{{ item.get_instance_display }}</span>
                             <span class="thumbnail-tags-right">{{ item.price }} $</span>
@@ -117,7 +117,7 @@
                 {% else %}
 
                 <a href="{% url 'single_service' item.slug %}" class="row bg-thumbnail d-block">
-                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{{ item.image_url }}')">
+                    <div class="col-12 bg-thumbnail-image" style="background-image: url('{% if item.image %}{{ item.image.url }}{%elif item.image_url %}{{ item.image_url }}{%else%}https://placehold.co/600x400/EEE/31343C{%endif%}')">
                         <div class="d-flex justify-content-between">
                             <span class="thumbnail-tags-left">{{ item.get_instance_display }}</span>
                             <span class="thumbnail-tags-right">{{ item.price }} $</span>
