@@ -1,10 +1,13 @@
+# Libraries
 import uuid
 
+# Django Imports
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
 from django_countries.fields import CountryField
 
+# Local Imports
 from product_service.models import Product, Service
 from homepage.models import UserProfile
 from django_plexosoft.settings import (

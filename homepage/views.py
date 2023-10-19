@@ -154,7 +154,7 @@ class AllProductServiceListView(ListView):
         # .strip() to remove any accidental whitespace
         self.search = request.GET.get('q', '').strip()
 
-        # Check if search keyword is empty or only consists of whitespaceF
+        # Check if search keyword is empty or only consists of whitespace
         if not self.search:
             messages.info(
                 request, 'Try using our internal search bar!')
@@ -808,7 +808,7 @@ class NewsletterPost(View):
 
     def post(self, request):
         with transaction.atomic():
-            # Here 'email' should be the key that you've sent via AJAX
+
             email = request.POST.get('email')
 
             existing_newsletter = NewsLetter.objects.filter(

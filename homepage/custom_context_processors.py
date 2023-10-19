@@ -1,6 +1,9 @@
+# Django & Python Related Imports
 from allauth.account.models import EmailAddress
 from decimal import Decimal
 from django.shortcuts import get_object_or_404
+
+# Local Imports
 from product_service.models import (Product, Service)
 from django_plexosoft.settings import (GRAND_DISCOUNT_THRESHOLD,
                                        GRAND_DISCOUNT_PERCENTAGE,

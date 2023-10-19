@@ -70,7 +70,6 @@ class DownloadAdmin(admin.ModelAdmin):
     ordering = ('file_name',)
 
 
-# Product & Service & Order related
 admin.site.register(CodeType)
 admin.site.register(ServiceType)
 admin.site.register(Category, CategoryAdmin)

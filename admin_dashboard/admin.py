@@ -1,6 +1,5 @@
 from django.contrib import admin
 from .models import OrderDeletionRecord
-# Register your models here.
 
 
 class OrderDeletionRecordAdmin(admin.ModelAdmin):

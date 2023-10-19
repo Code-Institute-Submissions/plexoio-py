@@ -3,8 +3,10 @@ from django.shortcuts import render, redirect, reverse, HttpResponse
 from django.http import HttpResponseServerError
 from django.views.generic import View, ListView
 from django.contrib import messages
+
 # Python
 import logging
+
 # Local Imports
 from product_service.views import Service
 

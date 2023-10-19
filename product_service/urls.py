@@ -1,5 +1,7 @@
+# Django Imports
 from django.urls import path, include, register_converter
 
+# Local Imports
 from .views import (AdminProductCreation,
                     ProductList,
                     AdminUpdateProductView,

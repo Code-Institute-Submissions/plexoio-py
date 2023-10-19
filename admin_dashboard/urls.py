@@ -1,5 +1,8 @@
+# Django Imports
+
 from django.urls import path, include
 
+# Local Imports
 from .views import (AdminDashboard, AdminSettingsView,
                     AdminPasswordChange, AdminRole, AdminDownloadCreation,
                     DownloadWithToken,

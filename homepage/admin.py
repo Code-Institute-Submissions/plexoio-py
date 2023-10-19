@@ -68,7 +68,6 @@ class NewsLetterAdmin(admin.ModelAdmin):
     ordering = ('-created_on',)
 
 
-# User Related
 admin.site.register(UserProfile, UserProfileAdmin)
 admin.site.register(Comment, CommentAdmin)
 admin.site.register(Like, LikeAdmin)

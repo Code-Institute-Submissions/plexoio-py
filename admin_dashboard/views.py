@@ -208,7 +208,7 @@ class DownloadWithToken(View):
         URL must be generated.
 
     Note:
-        Make sure to set appropriate permissions in your production server.
+        Make sure to set appropriate permissions in the production server.
     """
 
     def get(self, request, download_token, *args, **kwargs):

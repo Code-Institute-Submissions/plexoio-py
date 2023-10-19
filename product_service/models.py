@@ -1,9 +1,15 @@
+
+# Django Imports
 from django.db import models
-import uuid
-from homepage.models import STATUS
 from django.utils import timezone
+
+# Python Imports
+import uuid
 from dateutil.relativedelta import relativedelta
 import os
+
+# Local Imports
+from homepage.models import STATUS
 from .utils import generate_download_token, custom_upload_to
 
 SCOPE_TYPE = (
@@ -222,8 +228,6 @@ class Download(models.Model):
     @property
     def file_url(self):
         if self.file:
-            # Assuming you want to generate a URL based on the current host
-            # You can change this logic if you have a specific host in mind
             return self.file.url
         return None
 

@@ -1,8 +1,12 @@
+# Django Imports
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
-
 from django.utils import timezone
+
+# Python Imports
 from datetime import timedelta
+
+# Local Imports
 from .models import OrderLineItem, Order
 from homepage.models import UserProfile
 from admin_dashboard.models import OrderDeletionRecord
