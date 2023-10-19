@@ -12,5 +12,5 @@ Another key consideration is our current operational capacity. Being fully visib
 
 Within this section, you'll encounter the following content:
 
-1. [Strategy Plan](./strategy_plan.md)
+1. [Web Marketing Strategy Plan](./strategy_plan.md)
 2. [Actions Taken](./actions_taken.md)

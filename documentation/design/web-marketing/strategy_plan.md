@@ -1,4 +1,4 @@
-## Strategy Plan
+## Strategy Plan - Web Marketing
 
 1. **Identifying Users:**
     - Our target audience consists of individuals, businesses, and developers seeking tailored software products and services.

@@ -1,9 +1,9 @@
+## Actions Taken - Web Marketing
+
 ### Facebook
 We have created a Facebook page accessible from the main footer of the site. We plan to use it for our client base and potentially for paid ads in the future. After several releases and a consistent client base, we will explore organic social media marketing on Facebook and other social media networks when it's appropriate.
 
-- To create a Facebook Page we have followed these steps:
-
-Follow these steps to create a Facebook Page for your business or organization:
+- Follow these steps to create a Facebook Page for your business or organization:
 
 1. **Log In to Facebook:**
 If you don't have a Facebook account, you'll need to create one. Log in to your existing account or sign up for a new one.
