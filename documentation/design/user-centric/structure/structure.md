@@ -51,6 +51,4 @@ For more details on our **Information Architecture Design (IAD)** for the **Plex
 
 </details>
 
-<br>
-
 In this initial iteration, we have gained a clear understanding of our **desires**, **requirements**, and the elements that are beneficial for us in implementation. The integration of **IXD** and **IAD** has provided us with the necessary components to work with, empowering us to achieve our objectives with this remarkable project. With this solid foundation in place, we can now proceed to the **Skeleton** plane and start building from this point forward.
