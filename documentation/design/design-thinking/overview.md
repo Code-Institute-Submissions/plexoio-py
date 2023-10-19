@@ -15,5 +15,3 @@ The Design Thinking process is a structured methodology used to develop and enha
 6. [Ideate](ideate/ideate.md)
 7. [Conclusion](conclusion/conclusion.md)
 8. [PoC Prototype](PoC/poc.md)
-
-documentation/design/design-thinking/idea-outline/idea_outline.md
