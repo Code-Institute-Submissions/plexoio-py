@@ -140,8 +140,13 @@ Lighthouse offered comprehensive analysis across various aspects of our applicat
 ### GTMetrix
 Leveraging its distinct capabilities, GT-Metrix became an integral component of our testing regimen. It furnished us with invaluable recommendations, all of which we will considere in the next iteration. The app is performing okey and is primed for release.
 
-![GTMetrix test result image](../../assets/img/gtmetrix0.jpeg)
-![GTMetrix test result image](../../assets/img/gtmetrix1.jpeg)
+<details>
+<summary>GTMetrix Images</summary>
+
+![First GTMetrix test result image](../../assets/img/gtmetrix0.jpeg)
+![Second GTMetrix test result image](../../assets/img/gtmetrix1.jpeg)
+
+</details>
 
 ### Responsiveness
 
