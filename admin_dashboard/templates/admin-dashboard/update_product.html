@@ -229,7 +229,7 @@
                                     </strong><br><small>(Hold down “Control”, or “Command” on a Mac, to select more than
                                         one.)</small></label>
                                 <select name="related_downloads" class="form-control" id="related_downloads"
-                                    multiple="multiple" required>
+                                    multiple="multiple">
                                     {% for url in related_downloads %}
                                     <option {% for file_selected in files_selected %}{% if file_selected == url %}
                                         selected {% endif %}{% endfor %} value="{{ url.id }}">{{ url }}</option>

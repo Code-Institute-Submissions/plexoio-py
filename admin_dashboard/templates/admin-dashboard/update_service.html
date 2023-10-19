@@ -228,7 +228,7 @@
                                 <label for="related_downloads" class="form-label"><strong>Download File
                                     </strong></label>
                                 <select name="related_downloads" class="form-control" id="related_downloads"
-                                    multiple="multiple" required>
+                                    multiple="multiple">
                                     {% for url in related_downloads %}
                                     <option {% for file_selected in files_selected %}{% if file_selected == url %}
                                         selected {% endif %}{% endfor %} value="{{ url.id }}">{{ url }}</option>

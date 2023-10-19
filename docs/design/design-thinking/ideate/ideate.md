@@ -85,7 +85,7 @@
 - Image compression, lazy loading, caching, DNS, Cloudflare.
 
 ### Database
-- Product, Service, Category, Abstract User, Transaction, Download, Like, Comment, Newsletter
+- UserProfile, Product, Service, Download, Category, CodeType, ServiceType, Order, OrderLineItem, OrderDeletionRecord, Like, Comment, Newsletter
 
 ## Let’s go red
 - Not all may be applied in the first MVP iteration.
@@ -105,7 +105,7 @@
 
 - **Back-end:** 
   - Features: email verification, social media login options, Stripe for payment, newsletter system, tracking (user clicks, page visits), B2C e-commerce with one-time payment methods.
-  - Databases: Product, Service, Category, Abstract User, Transaction, Download, Review, Newsletter.
+  - Databases: UserProfile, Product, Service, Download, Category, CodeType, ServiceType, Order, OrderLineItem, OrderDeletionRecord, Like, Comment, Newsletter.
   - Technologies: Django, Bootstrap, jQuery, RSS, Allauth, AWS S3, EmailJS, PostgreSQL, Psycopg2, ElephantSQL, vendor-specific templates, Lottie files, etc.
 
 - **Culture:** Emphasizing ease of use, quality, affordability, robust support, clear communication, transparency, financial inclusion, and inclusivity of services.

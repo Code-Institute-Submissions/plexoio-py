@@ -2,12 +2,16 @@
 
 During our [Ideation Process](../design-thinking/ideate/ideate.md/?h=database#database), as anticipated, we chose the following Database Model:
 
+- UserProfile
 - Product
 - Service
-- Category
-- Abstract User
-- Transaction
 - Download
+- Category
+- CodeType
+- ServiceType
+- Order
+- OrderLineItem
+- OrderDeletionRecord
 - Like
 - Comment
 - Newsletter
