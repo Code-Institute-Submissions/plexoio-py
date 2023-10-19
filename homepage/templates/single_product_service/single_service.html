@@ -69,7 +69,7 @@
                                     {% if service.category %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted"
-                                            href="{% url 'combined_items_all' %}/?q={{service.category.alt_name}}">
+                                            href="{% url 'combined_items_all' %}?q={{service.category.alt_name}}">
                                             <i class="fas fa-tag mr-1"></i> {{ service.category }}
                                         </a>
                                     </p>
