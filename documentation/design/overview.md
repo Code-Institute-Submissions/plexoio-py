@@ -4,9 +4,9 @@ We've meticulously organized our documentation to ensure a logical flow and cohe
 
 Within this section, you'll encounter the following processes:
 
-1. [Design Thinking](documentation/design/design-thinking/overview.md)
-2. [User-Centric Design](documentation/design/user-centric/overview.md)
-3. [Entity Relationship Diagram (ERD)](documentation/design/erd/erd.md)
-3. [Web Marketing Strategy](documentation/design/web-marketing/overview.md)
+1. [Design Thinking](design-thinking/overview.md)
+2. [User-Centric Design](user-centric/overview.md)
+3. [Entity Relationship Diagram (ERD)](erd/erd.md)
+3. [Web Marketing Strategy](web-marketing/overview.md)
 
 You can access these sections via the index on the left for desktop devices, and through the dropdown menu on mobile devices.

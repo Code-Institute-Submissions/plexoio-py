@@ -6,7 +6,7 @@ Having diligently conducted extensive research, strategy formulation, and brains
 
 Our project ethos draws inspiration from the insightful words of Nikola Tesla, who once articulated:
 
-    My method is different. I do not rush into actual work. When I get a new idea, I start at once building it up in my imagination, making improvements, and operating the device in my mind. When I have gone so far as to embody everything in my invention, every possible improvement I can think of, and when I see no fault anywhere, I put into concrete form the final product of my brain.
+"My method is different. I do not rush into actual work. When I get a new idea, I start at once building it up in my imagination, making improvements, and operating the device in my mind. When I have gone so far as to embody everything in my invention, every possible improvement I can think of, and when I see no fault anywhere, I put into concrete form the final product of my brain."
  
 Mirroring Tesla's practice of thorough mental refinement before actualization, we commit to rigorously orchestrating and refining our project ahead of its programming stage.
 
