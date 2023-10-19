@@ -26,8 +26,8 @@ So go ahead, dig in, and make your development journey in the Plexosoft project 
 
 ## Index
 
-- [Make Documentation](mkdoc/mkdoc.md)
-- [Django Admin & Summernote](developer-snack/development_reminder.md)
+- [Make Documentation](../mkdoc/mkdoc.md)
+- [Django Admin & Summernote](development_reminder.md)
 - [Google Auth Installation](developer-snack/google_auth.md)
 - [Common Bugs](developer-snack/common_bugs.md)
 - [Naming Convention](developer-snack/naming_convention.md)
