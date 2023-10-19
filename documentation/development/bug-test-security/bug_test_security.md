@@ -143,8 +143,8 @@ Leveraging its distinct capabilities, GT-Metrix became an integral component of 
 <details>
 <summary>GTMetrix Images</summary>
 
-![First GTMetrix test result image](../../assets/img/gtmetrix0.jpeg)
-![Second GTMetrix test result image](../../assets/img/gtmetrix1.jpeg)
+   ![First GTMetrix test result image](../../assets/img/gtmetrix0.jpeg)
+   ![Second GTMetrix test result image](../../assets/img/gtmetrix1.jpeg)
 
 </details>
 
