@@ -7,11 +7,13 @@ At Plexosoft, our commitment to user-centric solutions has always been unwaverin
 The Design Thinking process is a structured methodology used to develop and enhance products, services, and experiences that centers around understanding the user's needs and testing solutions iteratively.
 
 ## Index
-1. [Idea Outline](documentation/design/design-thinking/idea-outline/idea_outline.md)
-2. [Empathy](documentation/design/design-thinking/empathy/empathy.md)
-3. [Personas](documentation/design/design-thinking/personas/personas.md)
-4. [Definition](documentation/design/design-thinking/definition/definition.md)
-5. [Persona](documentation/design/design-thinking/persona/persona.md)
-6. [Ideate](documentation/design/design-thinking/ideate/ideate.md)
-7. [Conclusion](documentation/design/design-thinking/conclusion/conclusion.md)
-8. [PoC Prototype](documentation/design/design-thinking/PoC/poc.md)
+1. [Idea Outline](idea-outline/idea_outline.md)
+2. [Empathy](empathy/empathy.md)
+3. [Personas](personas/personas.md)
+4. [Definition](definition/definition.md)
+5. [Persona](persona/persona.md)
+6. [Ideate](ideate/ideate.md)
+7. [Conclusion](conclusion/conclusion.md)
+8. [PoC Prototype](PoC/poc.md)
+
+documentation/design/design-thinking/idea-outline/idea_outline.md
