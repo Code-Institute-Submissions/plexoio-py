@@ -150,6 +150,10 @@ We have run the following manual tests:
 
     We implemented AWS S3 towards the end of the project, which initially led to an internal server error when users attempted to download purchased files. This issue has been resolved. The system now generates a unique link for downloading, which remains valid for 1 hour before expiring. This mechanism helps protect valuable files from unauthorized access. Further enhancements to secure URL files are planned for future iterations/releases.
 
+    #### f) Issue with the Select Tag on Orders
+
+    The select tag used in the orders section was not displaying correctly on mobile phones. Instead of showing the actual content, it displayed a `0`. As a workaround, we opted to use a `textarea` element instead of the `select` tag. Since the form is not intended for submission but only for display purposes, this solution effectively resolved the issue.
+
     #### Other Potential Bugs
     For other issues, we suggest refreshing the page or clearing cache files. If problems persist, it's likely not an issue with the Plexosoft project but may pertain to third-party services or the specific settings and capabilities of your device. If the issue comes from our end the we will fix it in future iterations.
 
