@@ -130,23 +130,17 @@ The principle of separation of concerns might seem self-explanatory, but ensurin
 | status          | IntegerField           | -       | -                 | -                                        |
 | category        | **ForeignKey**         | -       | Many to one       | Category Model                           |
 | excerpt         | CharField(128)         | -       | -                 | -                                        |
-| type            | IntegerField           | -       | -                 | 
--                                        |
-| instance        | IntegerField           | -       | -                 | 
--                                        |
-| code            | **ManyToManyField**    | -     | Many to many    | CodeType
--                                        |
-| service         | **ManyToManyField**    | -     | Many to many    | CodeType
--                                        |
-| preview         | URLField(1024)       | -         | -                 | 
--                                        |
-| docs            | URLField(1024)       | -         | -                 | 
--                                        |
+| type            | IntegerField           | -       | -                 | -                                        |
+| instance        | IntegerField           | -       | -                 | -                                        |
+| code            | **ManyToManyField**    | -       | Many to many      | CodeType                                 |
+| service         | **ManyToManyField**    | -       | Many to many      | CodeType                                 |
+| preview         | URLField(1024)         | -       | -                 | -                                        |
+| docs            | URLField(1024)         | -       | -                 | -                                        |
 | slug            | SlugField(200)         | Yes     | -                 | -                                        |
 | image           | ImageField             | -       | -                 | -                                        |
 | image_url       | URLField(1024)         | -       | -                 | -                                        |
 | author          | **ForeignKey**         | -       | Many to one       | UserProfile Model                        |
-| created_on      | DateTimeField              | -       | -                 | -                                        |
+| created_on      | DateTimeField          | -       | -                 | -                                        |
 | likes           | **ManyToManyField**    | -       | Many to many      | Like Model                               |
 | comments        | **ManyToManyField**    | -       | Many to many      | Comment Model                            |
 | transactions    | **ManyToManyField**    | -       | Many to many      | UserProfile Model through Transaction Model |
