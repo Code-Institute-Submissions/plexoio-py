@@ -92,8 +92,15 @@ class AdminServiceCreationForm(forms.ModelForm):
 
     title = forms.CharField(
         required=True, help_text='Insert a descriptive title')
+
     price = forms.DecimalField(
         required=True, help_text='Insert a fair price for the service')
+
+    image = forms.ImageField(
+        required=False, help_text='File size cannot exceed 500 KB')
+
+    image_url = forms.URLField(
+        required=False, help_text='Insert an external or local Image URL')
 
     category = forms.ModelChoiceField(
         queryset=Category.objects.all(),
@@ -156,7 +163,5 @@ class AdminServiceCreationForm(forms.ModelForm):
             'service': 'Hold down “Control”, or “Command” on a Mac, to select more than one.',
             'preview': 'Insert the preview link of the live service',
             'docs': 'Insert the docs link of the service',
-            'image': 'File size cannot exceed 500 KB',
-            'image_url': 'Insert an external or local Image URL',
             'author': 'The author has been automatically selected',
         }
