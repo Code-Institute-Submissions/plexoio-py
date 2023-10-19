@@ -10,8 +10,8 @@ An agile approach was used before, during and after development. We have used:
 The user stories have undergone some modifications since their initial conception during the **user-centric design** phase at the **scope plane**. What follows is the finalized user story that guided our development process.
 
 - In total there are **34** user stories and **176** Story Points.
-<!-- - Only **24 must-have** user stories  -->
-<!-- - Only **10 won't have** user stories  -->
+- We have **31 must-have** user stories 
+- And only **3 won't have** user stories 
 
 #### Must-have
 
@@ -104,4 +104,4 @@ We applied the **MoSCoW Prioritization** method as **labels** within our product
 - [Plexosoft's Labels](https://github.com/plexoio/py/labels)
 - [Open Issues](https://github.com/plexoio/py/issues)
 - [Closed Issues](https://github.com/plexoio/py/issues?q=is%3Aissue+is%3Aclosed)
-- [Last Sprint](https://github.com/users/plexoio/projects/14/views/1)
+- [Last Sprint](https://github.com/users/plexoio/projects/18)

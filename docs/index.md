@@ -11,9 +11,6 @@
 
     For a deeper dive into our progress, check out our [Github Commits](https://github.com/plexoio/py/commits/main?after=d40aa15cae7f956277a2c9de73eb659c5a2a151a+34&branch=main&qualified_name=refs%2Fheads%2Fmain).
 
-??? danger "Temp: Watchout"
-    - "Tech Used"
-    - Duplicate at the end to align to Code Institute if needed
 
 ## Index
 1. Design
