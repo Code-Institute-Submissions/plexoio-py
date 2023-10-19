@@ -11,6 +11,10 @@ Here are some popular options for creating more comprehensive online documentati
     - **Language**: Written in Python.
     - **Plugin**: With the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, your documentation will have a modern look.
     - **Website**: [mkdocs.org](https://www.mkdocs.org/)
+    - **Youtube Tutorial**: [How To Create STUNNING Code Documentation With MkDocs Material Theme](https://www.youtube.com/watch?v=Q-YA_dA8C20), which includes:
+        -  [GitHub Repo for this Video](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnVFMjhWYk5xSGQ3cUlwVG1RTzR1NGRYRHI1QXxBQ3Jtc0tuVkMzX19ZYlVIYk56LUFGRnJraE5jalJBam9UMFVBSGwzRlRmb2p0NkQ1WEROVW9mQWI3NjZrNEM0SXFUem0yR3J3RUJ1VEdDS0hJRDdfenpSaVBWYjY3VmZsbWRSWGJSN1AtaGc1NTk5ZGNQTS1waw&q=https%3A%2F%2Fgithub.com%2Fjames-willett%2Fmkdocs-material-youtube-tutorial&v=Q-YA_dA8C20)
+        - [MkDocs Material Theme](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHpEcEdGbUV2SW01dEJJWGIzNlM1OUVPSk1mUXxBQ3Jtc0ttYjFrRVZSZUQyalk1VExvMXc5eHNRM3pKRG02ZHFPWUF0ZWNrSWhkYldhMnItX2tSUVhONHczZ0VnNGJhOERoa1o5d3RZdE1pNmNuZ1NSOVJiWW4yc3V2dFV1NW1jZTFwU2tvOUZ5ZzhjSUJ5bkUwaw&q=https%3A%2F%2Fsquidfunk.github.io%2Fmkdocs-material%2F&v=Q-YA_dA8C20)
+        - [MkDocs Material Documentation](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWRxajlWNzhwNFp2bm16WXh6NUJGb0NfMHZkUXxBQ3Jtc0tuS1ZseVFPaXRzelJtb1FEMEtBanZRU0haOGkwWUQ0cDJKbUJodzE4ZU9SeEVWVzBSdnQxVlVYTnVoMmpFVllVdkVPNE1oMWZjMU9icG1SNXI4U3FCcHJOLUZRMGhYZUNpYVJOY0RSS3QxRDVTRWpKRQ&q=https%3A%2F%2Fsquidfunk.github.io%2Fmkdocs-material%2Freference%2Fcode-blocks%2F&v=Q-YA_dA8C20)
 
 2. **Sphinx**
     - **Description**: It's a tool that makes it easy to create intelligent and beautiful documentation. Originally developed for Python documentation.
