@@ -42,22 +42,22 @@ For a deeper dive into our progress, check out our [Github Commits](https://gith
 
 ## Index
 1. Design
-    - [Design Thinking](design/design-thinking/overview.md)
-    - [User-Centric Design](design/user-centric/overview.md)
-    - [Entity Relationship Diagram ERD](design/erd/erd.md)
+    - [Design Thinking](documentation/design/design-thinking/overview.md)
+    - [User-Centric Design](documentation/design/user-centric/overview.md)
+    - [Entity Relationship Diagram ERD](documentation/design/erd/erd.md)
 2. Development
-    - [Agile Development](development/agile-development/agile_development.md)
-    - [Bugs, Testing & Security](development/bug-test-security/bug_test_security.md)
+    - [Agile Development](documentation/development/agile-development/agile_development.md)
+    - [Bugs, Testing & Security](documentation/development/bug-test-security/bug_test_security.md)
 3. Features
-    - [Actual Features Explained](features/actual-features/actual_features.md)
-    - [Future Features Explained](features/future-features/future_features.md)
+    - [Actual Features Explained](documentation/features/actual-features/actual_features.md)
+    - [Future Features Explained](documentation/features/future-features/future_features.md)
 4. Tech
-    - [Technologies Used](tech/tech_used.md)
+    - [Technologies Used](documentation/tech/tech_used.md)
 5. Initialize
-    - [Workspace Set Up & Deployment Process](initialize/setup_and_deployment.md)
+    - [Workspace Set Up & Deployment Process](documentation/initialize/setup_and_deployment.md)
 6. Snack
-    - [Developer's Snack](snack/developer-snack/overview.md)
-    - [Mkdoc](snack/mkdoc/mkdoc.md)
+    - [Developer's Snack](documentation/snack/developer-snack/overview.md)
+    - [Mkdoc](documentation/snack/mkdoc/mkdoc.md)
 
 ## Mkdocs Documentation (OPTIONAL)
 View full documentation on Github Pages using Mkdocs:
