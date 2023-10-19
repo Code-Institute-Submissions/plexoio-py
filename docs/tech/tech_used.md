@@ -1,6 +1,6 @@
 # Technologies Used
 
-Every project, including ours, relies on a combination of tools and practices to ensure efficient development and successful results. Below is a curated list of technologies we utilized throughout the project's lifecycle:
+Every project, including ours, relies on a blend of tools and methodologies to guarantee efficient development and successful outcomes. Below is a curated list of technologies that we employed throughout the life cycle of the project:
 
 ### Development Tools
 
@@ -24,6 +24,13 @@ Every project, including ours, relies on a combination of tools and practices to
 18. **[EmailJS](https://www.emailjs.com/)**: Use to handle the contact form's requests.
 19. **[JSHint API](https://ci-jshint.herokuapp.com/)**: Javascript validator by code institute.
 20. **[JSHint APP](https://github.com/plexoio/plexo-js-hint)**: Developed by the author.
+21. **[JSON Formater](https://jsonformatter.org/)**: Json formater to understand JSON responses.
+22. **[Django Secret Key Generator](https://djecrety.ir/)**: To generate Django secret keys.
+23. **[Mailchimp](https://mailchimp.com/)**: to handle newsletter signups.
+24. **[AWS S3](https://s3.console.aws.amazon.com/)**: Bucket, group, user & policy creation to handle static & media files.
+25. **[Stripe](https://dashboard.stripe.com/test/developers)**: Stripe integration to handle payments.
+26. **[Wordtracker](https://www.wordtracker.com/)**: To research keywords and select the best for our SEO strategy.
+27. **[Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/)**: For future use to improve our SEO strategy.
 
 ### Design Elements
 
@@ -37,27 +44,11 @@ Every project, including ours, relies on a combination of tools and practices to
 8. **[Gitmind](https://gitmind.com/)**: Mind map creation.
 9. **[Ezgif](https://ezgif.com/video-to-gif)** & **[Freeconvert](https://www.freeconvert.com/gif-compressor)**: Handling GIF conversions and compressions.
 10. **[Wechat](https://www.wechat.com/)**: Quick screenshots, editing, and cropping tool.
+11. **[Footer](https://mdbootstrap.com/docs/standard/navigation/footer/)**: Template for footer.
+12. **[Placeholder Images](https://placehold.co/)**: Placeholder images for development.
 
 ### Artificial Intelligence (AI)
 
 - **[ChatGPT-4](https://chat.openai.com/chat)**: A multifaceted AI for consultation, copywriting, proofreading, and more. We tapped into GPT-4 primarily for guidance during complex situations, using it as a virtual mentor. While the AI proved invaluable, we ensured clarity and accuracy by cross-referencing with platforms like `Slack` and `Stackoverflow`.
 
 - **[Bard](https://bard.google.com/)**: Bard is a machine learning model developed by Google, designed to perform tasks similar to OpenAI's ChatGPT-4. It's a versatile and robust model that leverages natural language understanding and generation to cater to various applications.
-
-
-----
-
-
-Tech used:
-
-- https://mdbootstrap.com/docs/standard/navigation/footer/
-
-- https://placehold.co/
-
-- See other templaste links from Musa
-
-- https://startbootstrap.com/template/small-business#google_vignette (cart)
-
-- https://startbootstrap.com/template/shop-item (Single page) ???
-
-- https://jsonformatter.org/

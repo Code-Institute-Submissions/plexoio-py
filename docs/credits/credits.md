@@ -1,6 +1,6 @@
 ## Credits
 
-- [Technologies Used](https://github.com/plexoio/py/blob/main/docs/tech/tech_used.md): All technologies and tools used to build this project as presented in this section.
+- [Technologies Used](../tech/tech_used.md): All technologies and tools used to build this project as presented in this section.
 - **Mentors**: for all their tips and scope presentation and mentoring me, in general, two times on this project.
 - [Unsplash's Authors](https://unsplash.com/): for providing high quality images for our vote card creation
 - [Stackoverflow](https://stackoverflow.com/): for in-depth consultation and checking user-created content (from experienced developers) or human opinion.
