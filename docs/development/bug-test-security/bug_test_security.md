@@ -121,7 +121,7 @@ We have run the following manual tests:
     
     ??? info "GTMetrix Images"
          ![GTMetrix test result image](../../assets/img/gtmetrix0.jpeg)
-         ![GTMetrix test result image](../../assets/img/gtmetrix0.jpeg)
+         ![GTMetrix test result image](../../assets/img/gtmetrix1.jpeg)
 
     ### Responsiveness
 
