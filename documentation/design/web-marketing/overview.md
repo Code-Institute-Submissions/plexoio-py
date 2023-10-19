@@ -1,3 +1,5 @@
+# Web Marketing Strategy
+
 We have conducted extensive marketing research, enabling us to understand our target audience and establish clear objectives for continuous improvement.
 
 Given the complexity of user preferences and paradigms, we have employed MoSCoW Prioritization to categorize our various options effectively.
