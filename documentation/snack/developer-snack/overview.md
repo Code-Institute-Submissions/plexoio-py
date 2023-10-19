@@ -26,13 +26,13 @@ So go ahead, dig in, and make your development journey in the Plexosoft project 
 
 ## Index
 
-- [Make Documentation](snack/mkdoc/mkdoc.md)
-- [Django Admin & Summernote](snack/developer-snack/development_reminder.md)
-- [Google Auth Installation](snack/developer-snack/google_auth.md)
-- [Common Bugs](snack/developer-snack/common_bugs.md)
-- [Naming Convention](snack/developer-snack/naming_convention.md)
-- [Lambda Convention](snack/developer-snack/lambda.md)
-- [Database & Django Shell](snack/developer-snack/shell_database.md)
-- [Download Security](snack/developer-snack/download_security.md)
-- [Session Delete/Print](snack/developer-snack/session_delete_and_print.md)
-- [NULL After User Deletion](snack/developer-snack/null_after_user_deletion.md)
+- [Make Documentation](mkdoc/mkdoc.md)
+- [Django Admin & Summernote](developer-snack/development_reminder.md)
+- [Google Auth Installation](developer-snack/google_auth.md)
+- [Common Bugs](developer-snack/common_bugs.md)
+- [Naming Convention](developer-snack/naming_convention.md)
+- [Lambda Convention](developer-snack/lambda.md)
+- [Database & Django Shell](developer-snack/shell_database.md)
+- [Download Security](developer-snack/download_security.md)
+- [Session Delete/Print](developer-snack/session_delete_and_print.md)
+- [NULL After User Deletion](developer-snack/null_after_user_deletion.md)
