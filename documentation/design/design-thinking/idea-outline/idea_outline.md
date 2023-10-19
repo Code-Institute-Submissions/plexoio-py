@@ -1,7 +1,8 @@
 ## Empathy: Transforming ideas into reality
 
-???+ tip "Goal"
-    - To establish a software marketplace where individuals, businesses, and developers can purchase functional code, whether for ownership or licensing.
+### Goals
+
+To establish a software marketplace where individuals, businesses, and developers can purchase functional code, whether for ownership or licensing.
 
 - **Business intentions**: Understand the distinction between software licensing and software ownership.
 

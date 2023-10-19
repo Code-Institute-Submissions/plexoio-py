@@ -41,10 +41,11 @@ Explore Plexosoft and discover a world of software possibilities designed with y
 For a deeper dive into our progress, check out our [Github Commits](https://github.com/plexoio/py/commits/main?after=d40aa15cae7f956277a2c9de73eb659c5a2a151a+34&branch=main&qualified_name=refs%2Fheads%2Fmain).
 
 ## Index
-1. Design
+1. Product Design
     - [Design Thinking](documentation/design/design-thinking/overview.md)
     - [User-Centric Design](documentation/design/user-centric/overview.md)
     - [Entity Relationship Diagram ERD](documentation/design/erd/erd.md)
+    - [Web Marketing Strategy](documentation/design/web-marketing/overview.md)
 2. Development
     - [Agile Development](documentation/development/agile-development/agile_development.md)
     - [Bugs, Testing & Security](documentation/development/bug-test-security/bug_test_security.md)

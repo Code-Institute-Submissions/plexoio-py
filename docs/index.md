@@ -17,6 +17,7 @@
     - [Design Thinking](design/design-thinking/overview.md)
     - [User-Centric Design](design/user-centric/overview.md)
     - [Entity Relationship Diagram ERD](design/erd/erd.md)
+    - [Web Marketing Strategy](design/web-marketing/overview.md)
 2. Development
     - [Agile Development](development/agile-development/agile_development.md)
     - [Bugs, Testing & Security](development/bug-test-security/bug_test_security.md)
