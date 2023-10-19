@@ -40,6 +40,11 @@ class UserProfile(AbstractUser):
 
 
 class Comment(models.Model):
+    """ Remember to add this solution in the next iteration:
+        'writer_name = models.CharField(
+            max_length=256, null=True, blank=True)'
+        This will help us solve the None issue if user has been deleted. """
+
     writer = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                related_name='user_comments',
                                null=True, blank=True)
@@ -66,7 +71,10 @@ class Comment(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return f'Commented by {self.writer.username}'
+        if self.writer:
+            return f'Commented by {self.writer.username}'
+        else:
+            return 'Commented by Deleted User'
 
 
 class Like(models.Model):

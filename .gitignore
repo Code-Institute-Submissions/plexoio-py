@@ -9,3 +9,4 @@ cloudinary_python.txt
 *.sqllite3
 *.pyc
 db.sqlite3
+.cache/
