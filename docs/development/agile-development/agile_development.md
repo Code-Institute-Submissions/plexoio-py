@@ -15,7 +15,7 @@ The user stories have undergone some modifications since their initial conceptio
 
 #### Must-have
 
-??? abstract "Scope: User Stories"
+??? abstract "Scope: Must-have User Stories"
 
     | Theme | Epics | User Stories | Story Point |
     |-------|-------|--------------|-------------|
@@ -53,11 +53,13 @@ The user stories have undergone some modifications since their initial conceptio
 
 #### Won't-have
 
-| Theme                 | Epics                                | User Stories | Story Point |
-|-----------------------|--------------------------------------|--------------|-------------|
-| Accountability | Develop Support Button | As a user, I want a support button on the product & service page that redirects me to a contact form with pre-filled information based on my prior selection, reducing repetitive input. | **4** |
-| | Integrate RSS Articles | As a user, I aspire to read top-quality articles from various sources within the marketplace, aiding my present and future decision-making. | **4** |
-| | Implement Request Formats in Contact Form | As a user, I want predefined request formats in the contact form, ensuring effective communication of my ideas. | **4** |
+??? abstract "Scope: Won't-have User Stories"
+
+    | Theme                 | Epics                                | User Stories | Story Point |
+    |-----------------------|--------------------------------------|--------------|-------------|
+    | Accountability | Develop Support Button | As a user, I want a support button on the product & service page that redirects me to a contact form with pre-filled information based on my prior selection, reducing repetitive input. | **4** |
+    | | Integrate RSS Articles | As a user, I aspire to read top-quality articles from various sources within the marketplace, aiding my present and future decision-making. | **4** |
+    | | Implement Request Formats in Contact Form | As a user, I want predefined request formats in the contact form, ensuring effective communication of my ideas. | **4** |
 
 ### Product Backlog
 
