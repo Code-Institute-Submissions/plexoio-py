@@ -170,16 +170,18 @@
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-white mt-5 footer-sticky">
+        
         <!-- Copyright -->
         <div class="text-center pt-4 px-4 footer-bg">
             © {{ copyright }} Copyright
             <a class="text-reset fw-bold text-white" href="https://github.com/plexoio/py">Plexosoft</a>
         </div>
+
         <!-- Terms & GDPR -->
         <div class="text-center pb-3 px-4 footer-bg m-0">
-            <a class="text-white" href="" target="_blank">Privacy Policy</a>
+            <a class="text-white" href="{% url 'policy_page'%}" target="_blank">Privacy Policy</a>
             &middot;
-            <a class="text-white" href="" target="_blank">Terms &amp; Conditions</a>
+            <a class="text-white" href="{% url 'terms_page'%}" target="_blank">Terms &amp; Conditions</a>
         </div>
     </footer>
 
