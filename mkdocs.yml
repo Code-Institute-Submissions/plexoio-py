@@ -31,8 +31,8 @@ nav:
       - Agile Development: development/agile-development/agile_development.md
       - Bug, Testing & Security: development/bug-test-security/bug_test_security.md
   - Features:
-      - Actual Features: features/actual-features/actual_features.md
-      - Future Features: features/future-features/future_features.md
+      - Actual Features Explained: features/actual-features/actual_features.md
+      - Future Features Explained: features/future-features/future_features.md
   - Tech:
       - Technologies Used: tech/tech_used.md
   - Initialize:
