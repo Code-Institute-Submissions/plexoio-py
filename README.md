@@ -33,10 +33,34 @@ Explore Plexosoft and discover a world of software possibilities designed with y
 
 5. **Future Deployment by Author**: Post evaluation by Code Institute, the author intends to host his software somewhere else in a dedicated hosting and domain service.
 
----
+## Timeframe
 
-## Documentation
-View full documentation on Github Pages using Mkdocs (OPTIONAL):
+- **Start Date:** Aug 13, 2023 📅
+- **Finish Date:** Oct 14, 2023 📅
+
+For a deeper dive into our progress, check out our [Github Commits](https://github.com/plexoio/py/commits/main?after=d40aa15cae7f956277a2c9de73eb659c5a2a151a+34&branch=main&qualified_name=refs%2Fheads%2Fmain).
+
+## Index
+1. Design
+    - [Design Thinking](design/design-thinking/overview.md)
+    - [User-Centric Design](design/user-centric/overview.md)
+    - [Entity Relationship Diagram ERD](design/erd/erd.md)
+2. Development
+    - [Agile Development](development/agile-development/agile_development.md)
+    - [Bugs, Testing & Security](development/bug-test-security/bug_test_security.md)
+3. Features
+    - [Actual Features Explained](features/actual-features/actual_features.md)
+    - [Future Features Explained](features/future-features/future_features.md)
+4. Tech
+    - [Technologies Used](tech/tech_used.md)
+5. Initialize
+    - [Workspace Set Up & Deployment Process](initialize/setup_and_deployment.md)
+6. Snack
+    - [Developer's Snack](snack/developer-snack/overview.md)
+    - [Mkdoc](snack/mkdoc/mkdoc.md)
+
+## Mkdocs Documentation (OPTIONAL)
+View full documentation on Github Pages using Mkdocs:
 
 [![Plexosoft Documentation](https://img.shields.io/badge/View-Plexosoft_Documentation-blue)](https://plexoio.github.io/py/) 
 
