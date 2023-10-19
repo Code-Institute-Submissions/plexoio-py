@@ -59,15 +59,15 @@ The cart accumulates the user's choices, allowing them to check out once they ha
 <details>
 <summary>Account Management</summary>
 
-    ### Login
-    The login feature provides a secure interface for users to access their accounts, either manually or through Google login.
+### Login
+The login feature provides a secure interface for users to access their accounts, either manually or through Google login.
 
-    ![Login](../../assets/img/login.png)
+![Login](../../assets/img/login.png)
 
-    ### Signup
-    This feature allows new users to join the platform by creating an account, either manually or through Google login.
+### Signup
+This feature allows new users to join the platform by creating an account, either manually or through Google login.
 
-    ![Signup](../../assets/img/signup.png)
+![Signup](../../assets/img/signup.png)
 
 </details>
 
