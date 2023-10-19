@@ -44,31 +44,23 @@
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-2 w-25">
+
+                                                            <!-- Product Instance Image -->
                                                             {% if item.product.instance == 0 %}
                                                             <a href="{% url 'single_product' item.product.slug %}">
-                                                                {% if item.product.image_url %}
-                                                                <a href="{% url 'single_product' item.product.slug %}">
-                                                                    <img class="img-fluid rounded"
-                                                                        src="{{ item.product.image_url }}">
-                                                                </a>
-                                                                {% else %}
-                                                                <img class="w-100" src="{{ MEDIA_URL }}noimage.png"
+                                                                <img class="img-fluid rounded"
+                                                                    src="{% if item.product.image %}{{ item.product.image.url }}{%elif item.product.image_url %}{{ item.product.image_url }}{%else%}https://placehold.co/600x400/EEE/31343C{%endif%}"
                                                                     alt="{{ product.title }}">
-                                                                {% endif %}
                                                             </a>
+
+                                                            <!-- Service Instance Image -->
                                                             {% elif item.service.instance == 1 %}
                                                             <a href="{% url 'single_service' item.service.slug %}">
-                                                                {% if item.service.image_url %}
-                                                                <a href="{% url 'single_service' item.service.slug %}">
-                                                                    <img class="img-fluid rounded"
-                                                                        src="{{ item.service.image_url }}">
-                                                                </a>
-                                                                {% else %}
-                                                                <img class="w-100" src="{{ MEDIA_URL }}noimage.png"
-                                                                    alt="{{ service.title }}">
-                                                                {% endif %}
+                                                                <img class="img-fluid rounded"
+                                                                    src="{% if item.service.image %}{{ item.service.image.url }}{%elif item.service.image_url %}{{ item.service.image_url }}{%else%}https://placehold.co/600x400/EEE/31343C{%endif%}">
                                                             </a>
                                                             {% endif %}
+
                                                         </div>
                                                         {% if item.product.instance == 0 %}
                                                         <div class="col-8">

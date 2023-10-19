@@ -31,15 +31,22 @@
                             <!-- Item Info -->
                             <tr class="p-3">
                                 <td class="py-3 w-25">
+
+                                    <!-- Product Instance Image -->
                                     {% if item.product.instance == 0 %}
                                     <a href="{% url 'single_product' item.product.slug %}">
-                                        <img class="img-fluid rounded" src="{{ item.product.image_url }}">
+                                        <img class="img-fluid rounded"
+                                            src="{% if item.product.image %}{{ item.product.image.url }}{%elif item.product.image_url %}{{ item.product.image_url }}{%else%}https://placehold.co/600x400/EEE/31343C{%endif%}">
                                     </a>
+
+                                    <!-- Product Instance Image -->
                                     {% elif item.service.instance == 1 %}
                                     <a href="{% url 'single_service' item.service.slug %}">
-                                        <img class="img-fluid rounded" src="{{ item.service.image_url }}">
+                                        <img class="img-fluid rounded"
+                                            src="{% if item.service.image %}{{ item.service.image.url }}{%elif item.service.image_url %}{{ item.service.image_url }}{%else%}https://placehold.co/600x400/EEE/31343C{%endif%}">
                                     </a>
                                     {% endif %}
+
                                 </td>
                                 <td class="p-3">
                                     {% if item.product.instance == 0 %}
