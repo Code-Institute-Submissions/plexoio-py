@@ -1,4 +1,4 @@
-## Empathy: Transforming ideas into reality
+## Idea Outline - Transforming ideas into reality
 
 ### Goals
 

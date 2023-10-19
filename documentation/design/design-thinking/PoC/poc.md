@@ -1,4 +1,4 @@
-# Proof of Concept: The Prototype 
+# Proof of Concept: The Prototype - PoC
 
 ## E-commerce Type
 

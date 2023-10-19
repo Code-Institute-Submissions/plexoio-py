@@ -1,4 +1,6 @@
-## Persona: Jordan
+## Persona
+
+## Jordan
 
 ### Background
 - Profession: Digital Entrepreneur with a keen interest in Software Development and Platform Management.

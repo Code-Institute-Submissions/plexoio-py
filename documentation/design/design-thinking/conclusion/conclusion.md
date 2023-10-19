@@ -1,4 +1,4 @@
-## Conclusion of the Design Thinking Session
+## Conclusion - Design Thinking Session
 
 **Empathize:**
 We started with understanding the target audience: global users who value clear distinctions between software ownership and licensing, transparency, financial inclusivity, and culturally relevant designs.

@@ -1,4 +1,4 @@
-# Ideate
+## Ideate
 
 ## Let’s go green
 - In the first iteration, our approach will be a B2C e-commerce, starting with one-time payment methods.

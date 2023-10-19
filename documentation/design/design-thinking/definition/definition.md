@@ -1,4 +1,4 @@
-## Define
+## Definition
 
 
 ### Key Insights from Orlando's Interview
