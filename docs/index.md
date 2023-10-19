@@ -40,5 +40,5 @@
 
 [![No License](https://img.shields.io/badge/License-No_License-red)](about/LICENSE.md) 
 
-??? danger "No License!"
+??? danger "No License"
     You cannot reproduce, distribute, or create derivative works from this project.
