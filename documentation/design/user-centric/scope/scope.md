@@ -4,7 +4,7 @@ In this plane, we must approach decisions with realism and give careful consider
 
 It's important to note that in Agile Development, nothing is set in stone. Our estimations are flexible, and they can evolve, either increasing or decreasing. We remain open to adjustments throughout any stage of the development process.
 
-Luckily, we are utilizing the **Django framework**, which embodies the philosophy of **For perfectionists with deadlines**:
+Luckily, we are utilizing the **Django framework**, which embodies the philosophy of **for perfectionists with deadlines**:
 
 - Visit [Djangoproject](https://www.djangoproject.com/)
 
