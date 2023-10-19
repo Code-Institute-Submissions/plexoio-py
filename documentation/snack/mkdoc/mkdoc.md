@@ -1,6 +1,6 @@
-# Create Comprehensive Online Documentation
+## Create Comprehensive Online Documentation
 
-## Best Software
+### Best Software
 
 While having a `README` on GitHub is standard for giving an overview of a project and basic instructions, many projects opt for more extensive documentation, especially if they're large or are intended for public or wide-scale internal use. 
 
@@ -48,7 +48,7 @@ Yes, having detailed, user-friendly, and accessible online documentation is cert
 
 Which tool or framework you should use largely depends on your needs, preferences, and the technologies you're familiar or comfortable with. If you're already in the JavaScript ecosystem, for instance, you might opt for Docusaurus or VuePress. If you're a Python developer, MkDocs or Sphinx might be more up your alley. And if you want a platform where everything is set up and maintained for you, GitBook is a solid choice.
 
-## Quick Insight
+### Quick Insight
 
 All of the mentioned documentation tools support writing in Markdown, which is one of the reasons why they are popular choices for developers. Markdown is a lightweight markup language that's easy to write and read, making it a favorite for documentation.
 

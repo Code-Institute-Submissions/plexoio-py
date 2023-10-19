@@ -1,3 +1,5 @@
+## NULL After User Deletion Solution
+
 If you'd like to replace the `writer` ForeignKey field with a string after a user has been deleted, you can't do it directly within the existing database model because the `writer` field is specifically designed to be a ForeignKey linking to another model.
 
 However, you can work around this limitation in various ways:

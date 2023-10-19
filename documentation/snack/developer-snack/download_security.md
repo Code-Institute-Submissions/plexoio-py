@@ -1,4 +1,4 @@
-# File Download Security
+## File Download Security
 
 When using `{% if order.status == 1 %}` in your template to conditionally display download links based on the order's status, you are taking a reasonable step to restrict access to the URL. However, to enhance the security of your file downloads, it's important to consider the following additional measures:
 

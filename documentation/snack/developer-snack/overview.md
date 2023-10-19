@@ -35,4 +35,4 @@ So go ahead, dig in, and make your development journey in the Plexosoft project 
 - [Database & Django Shell](shell_database.md)
 - [Download Security](download_security.md)
 - [Session Delete/Print](session_delete_and_print.md)
-- [NULL After User Deletion](null_after_user_deletion.md)
+- [NULL After User Deletion Solution](null_after_user_deletion.md)
