@@ -36,7 +36,7 @@ nav:
   - Tech:
       - Technologies Used: tech/tech_used.md
   - Initialize:
-      - Set Up & Deployment: initialize/setup_and_deployment.md
+      - Workspace Set Up & Deployment: initialize/setup_and_deployment.md
   - Snack:
       - Overview: snack/developer-snack/overview.md
       - Make Documentation: snack/mkdoc/mkdoc.md
