@@ -41,7 +41,7 @@ Explore Plexosoft and discover a world of software possibilities designed with y
 
 For a deeper dive into our progress, check out our [Github Commits](https://github.com/plexoio/py/commits/main?after=d40aa15cae7f956277a2c9de73eb659c5a2a151a+34&branch=main&qualified_name=refs%2Fheads%2Fmain).
 
-## Dcoumentation Index (LEGACY)
+## Documentation Index (LEGACY)
 
 1. Product Design
     - [Design Thinking](documentation/design/design-thinking/overview.md)
