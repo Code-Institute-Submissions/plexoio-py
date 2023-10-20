@@ -1,3 +1,5 @@
+## [RETURN](https://github.com/plexoio/py/blob/main/documentation/snack/developer-snack/overview.md)
+
 ## Manipulate Database from the Django Shell
 
 You can interact with your Django database using the shell. Here's a step-by-step guide on how to manipulate data using the shell.

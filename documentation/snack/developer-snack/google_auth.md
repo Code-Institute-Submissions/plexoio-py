@@ -1,3 +1,5 @@
+## [RETURN](https://github.com/plexoio/py/blob/main/documentation/snack/developer-snack/overview.md)
+
 ## Google OAuth Integration Guide
 
 This comprehensive guide aims to facilitate the integration of Google OAuth 2.0 with a Django application using the Django Allauth package. Below are the official documentation sources you may find useful for a more in-depth understanding:

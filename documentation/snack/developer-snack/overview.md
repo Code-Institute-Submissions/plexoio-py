@@ -1,4 +1,6 @@
-# Developer's Snack
+## [HOME | RETURN](https://github.com/plexoio/py/tree/main#documentation-index-legacy)
+
+## Developer's Snack
 
 Welcome to the **Developer's Snack Section**, your one-stop destination for quick bites of code, best practices, and reminders to streamline your development journey in the Plexosoft project.
 

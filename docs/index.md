@@ -1,7 +1,9 @@
 # Welcome to Plexosoft Documentation
 
 [GitHub Repository](https://github.com/plexoio/py){ .md-button .md-button--primary }
+
 [Deployed Site](https://plexosoft-2714f270803c.herokuapp.com/){ .md-button .md-button--primary }
+
 [Author's LinkedIn](https://www.linkedin.com/in/arellanofrank/){ .md-button .md-button--info }
 
 ???+ info "Project Life Cycle"

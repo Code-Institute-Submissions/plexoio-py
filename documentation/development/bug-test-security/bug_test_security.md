@@ -1,3 +1,5 @@
+## [HOME | RETURN](https://github.com/plexoio/py/tree/main#documentation-index-legacy)
+
 ## Bugs, Testing & Security
 
 This comprehensive section serves as the cornerstone for ensuring the reliability, performance, and safety of our Plexosoft project. 

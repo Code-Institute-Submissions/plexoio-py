@@ -44,6 +44,7 @@ For a deeper dive into our progress, check out our [Github Commits](https://gith
 ## Documentation Index (LEGACY)
 
 1. Product Design
+    - [Overview](documentation/design/overview.md)
     - [Design Thinking](documentation/design/design-thinking/overview.md)
     - [User-Centric Design](documentation/design/user-centric/overview.md)
     - [Entity Relationship Diagram ERD](documentation/design/erd/erd.md)
