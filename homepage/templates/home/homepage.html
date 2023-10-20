@@ -195,7 +195,7 @@
                 <div class="row mb-1">
                     <div class="col-12">
                         <div class="d-flex justify-content-between">
-                            <span class="likes-tags-left"><i class="fa-regular fa-heart"></i>
+                            <span class="likes-tags-left"><i class="fa-regular fa-heart {% if item.likescount != 0 %}text-danger fa-solid{% endif %}"></i>
                                 {{ item.likescount }}</span>
                             <span class="purchases-tags-right"><i class="fa-solid fa-cart-shopping"></i>
                                 {% for title, count in order_count_combined.items %}
@@ -317,7 +317,7 @@
                 <div class="row mb-1">
                     <div class="col-12">
                         <div class="d-flex justify-content-between">
-                            <span class="likes-tags-left"><i class="fa-regular fa-heart"></i>
+                            <span class="likes-tags-left"><i class="fa-regular fa-heart {% if product.likescount != 0 %}text-danger fa-solid{% endif %}"></i>
                                 {{ product.likescount }}</span>
                             <span class="purchases-tags-right"><i class="fa-solid fa-cart-shopping"></i>
                                 {% for title, count in order_count_product.items %}
@@ -430,7 +430,7 @@
                 <div class="row mb-1">
                     <div class="col-12">
                         <div class="d-flex justify-content-between">
-                            <span class="likes-tags-left"><i class="fa-regular fa-heart"></i>
+                            <span class="likes-tags-left"><i class="fa-regular fa-heart {% if service.likescount != 0 %}text-danger fa-solid{% endif %}"></i>
                                 {{ service.likescount }}</span>
                             <span class="purchases-tags-right"><i class="fa-solid fa-cart-shopping"></i>
                                 {% for title, count in order_count_service.items %}

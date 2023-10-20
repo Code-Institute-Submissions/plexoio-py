@@ -18,7 +18,7 @@ During our [Ideation Process](../design-thinking/ideate/ideate.md/?h=database#da
 
 The principle of separation of concerns might seem self-explanatory, but ensuring organized data while respecting its integrity is pivotal. This approach not only facilitates future project scalability but also simplifies the development process.
 
-## Diagram
+## Diagram (Old version, new version in the next release)
 
 <details>
 <summary>Diagram Image</summary>

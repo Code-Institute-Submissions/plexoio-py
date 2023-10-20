@@ -123,14 +123,14 @@
                                 {% else %}
                                 <button type="button" id="like-button" name="like-button" value="{{ product.slug }}"
                                     class="likes-tags-left border-0">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-regular fa-heart {% if product.likescount != 0 %}text-danger fa-solid{% endif %}"></i>
                                     {{ product.likescount }}
                                 </button>
                                 {% endif %}
                                 <span class="purchases-tags-right"><i class="fa-solid fa-cart-shopping"></i>
                                     {{ order_count }} </span>
                                 {% else %}
-                                <span class="likes-tags-left"><i class="fa-regular fa-heart"></i>
+                                <span class="likes-tags-left"><i class="fa-regular fa-heart {% if product.likescount != 0 %}text-danger fa-solid{% endif %}"></i>
                                     {{ product.likescount }}</span>
                                 <span class="purchases-tags-right"><i class="fa-solid fa-cart-shopping"></i>
                                     {{ order_count }} </span>

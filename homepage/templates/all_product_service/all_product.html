@@ -159,7 +159,7 @@
                 <div class="row mb-1">
                     <div class="col-12">
                         <div class="d-flex justify-content-between">
-                            <span class="likes-tags-left"><i class="fa-regular fa-heart"></i>
+                            <span class="likes-tags-left"><i class="fa-regular fa-heart {% if product.likescount != 0 %}text-danger fa-solid{% endif %}"></i>
                                 <span class="likes">
                                     {{ product.likescount }}
                                 </span>
