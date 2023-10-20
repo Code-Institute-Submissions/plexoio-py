@@ -93,8 +93,7 @@ class StripeCheckoutView(View):
                 user.save()
                 _send_password_email(self, user, password)
                 messages.info(
-                    request, f'''Your new password <b>{password} </b>
-                        has been downloaded!
+                    request, f'''Your new password has been downloaded!
                         <br> Password also sent to your email.''')
 
             # Create/get NEW user profile and associate it with the new user
