@@ -2,7 +2,7 @@
 
 During our [Ideation Process](../design-thinking/ideate/ideate.md/?h=database#database), as anticipated, we chose the following Database Model:
 
-???+ tip "Plexosoft Database Model"
+???+ tip "Plexosoft Database Models (13)"
     - UserProfile
     - Product
     - Service
@@ -32,10 +32,10 @@ The principle of separation of concerns might seem self-explanatory, but ensurin
 
     | Attribute         | Type             | Unique  | Relationship  | Model Linked To                            |
     |-------------------|------------------|---------|---------------|-------------------------------------------|
+    | email              | IntegerField     | Yes       | -             | -                                         |
     | role              | IntegerField     | -       | -             | -                                         |
     | type              | IntegerField     | -       | -             | -                                         |
     | status            | IntegerField     | -       | -             | -                                         |
-    | user_transactions | **ManyToManyField** | -    | Many to many  | Product Model through Transaction Model    |
 
 ### Comment Model
 ??? abstract "Comment Model"
@@ -45,6 +45,8 @@ The principle of separation of concerns might seem self-explanatory, but ensurin
     | comment       | TextField(256)    | Yes     | -             | -                              |
     | product       | **ForeignKey**    | -       | Many to one   | Product Model                  |
     | service       | **ForeignKey**    | -       | Many to one   | Service Model                  |
+    | status            | IntegerField     | -       | -             | -                                         |
+    | instance            | IntegerField     | -       | -             | -                                         |
     | created_on    | DateTimeField         | -       | -             | -                              |
 
 ### Like Model
@@ -55,6 +57,8 @@ The principle of separation of concerns might seem self-explanatory, but ensurin
     | liker         | **ForeignKey**    | -       | Many to one   | UserProfile Model               |
     | product       | **ForeignKey**    | -       | Many to one   | Product Model                  |
     | service       | **ForeignKey**    | -       | Many to one   | Service Model                  |
+    | status            | IntegerField     | -       | -             | -                                         |
+    | instance            | IntegerField     | -       | -             | -                                         |
     | created_on    | DateTimeField         | -       | -             | -                              |
 
 ### NewsLetter Model
@@ -95,22 +99,22 @@ The principle of separation of concerns might seem self-explanatory, but ensurin
     |-----------------|------------------------|---------|-------------------|------------------------------------------|
     | title           | CharField(64)          | Yes     | -                 | -                                        |
     | sku             | CharField(64)          | Yes     | -                 | -                                        |
-    | price           | DecimalField           | -       | -                 | -                                        |
-    | description     | TextField(256)         | -       | -                 | -                                        |
+    | price           | DecimalField(6)           | -       | -                 | -                                        |
+    | description     | TextField(528)         | -       | -                 | -                                        |
     | status          | IntegerField           | -       | -                 | -                                        |
     | category        | **ForeignKey**         | -       | Many to one       | Category Model                           |
-    | excerpt         | CharField(128)         | -       | -                 | -                                        |
+    | excerpt         | CharField(264)         | -       | -                 | -                                        |
     | type            | IntegerField           | -       | -                 | 
     -                                        |
     | instance        | IntegerField           | -       | -                 | 
     -                                        |
     | code            | **ManyToManyField**    | -     | Many to many    | CodeType
     -                                        |
-    | service         | **ManyToManyField**    | -     | Many to many    | CodeType
+    | service         | **ManyToManyField**    | -     | Many to many    | ServiceType
     -                                        |
-    | preview         | URLField(1024)       | -         | -                 | 
+    | preview         | URLField(1024)       | Yes         | -                 | 
     -                                        |
-    | docs            | URLField(1024)       | -         | -                 | 
+    | docs            | URLField(1024)       | Yes         | -                 | 
     -                                        |
     | slug            | SlugField(200)         | Yes     | -                 | -                                        |
     | image           | ImageField             | -       | -                 | -                                        |
@@ -119,7 +123,7 @@ The principle of separation of concerns might seem self-explanatory, but ensurin
     | created_on      | DateTimeField              | -       | -                 | -                                        |
     | likes           | **ManyToManyField**    | -       | Many to many      | Like Model                               |
     | comments        | **ManyToManyField**    | -       | Many to many      | Comment Model                            |
-    | transactions    | **ManyToManyField**    | -       | Many to many      | UserProfile Model through Transaction Model |
+    | orders    | **ManyToManyField**    | -       | Many to many      | Order Model |
     | download_url    | **ManyToManyField**    | -       | Many to many      | Download Model                           |
 
 ### Service Model
@@ -134,25 +138,51 @@ The principle of separation of concerns might seem self-explanatory, but ensurin
 
     | Attribute      | Type            | Unique | Relationship | Model Linked To             |
     |----------------|-----------------|--------|--------------|-----------------------------|
+    | file_name        | CharField(64)  | Yes      | Many to one  | Product Model               |
     | product        | **ForeignKey**  | -      | Many to one  | Product Model               |
     | service        | **ForeignKey**  | -      | Many to one  | Service Model               |
-    | file_url       | URLField(1024)  | -      | -            | -                           |
+    | file       | FileField  | -      | -            | -                           |
     | status         | IntegerField    | -      | -            | -                           |
+    | token         | UUIDField    | Yes      | -            | -                           |
+    | download_token      | CharField(12)    | Yes      | -            | -                           |
+    | created_on         | DateTimeField    | -      | -            | -                           |
 
-### Transaction Model
-??? abstract "Transaction Model"
+### Order Model
+??? abstract "Order Model"
 
     | Attribute      | Type            | Unique | Relationship | Model Linked To             |
     |----------------|-----------------|--------|--------------|-----------------------------|
-    | buyer          | **ForeignKey**  | -      | Many to one  | UserProfile Model           |
-    | product        | **ForeignKey**  | -      | Many to one  | Product Model               |
-    | service        | **ForeignKey**  | -      | Many to one  | Service Model               |
-    | sku            | CharField(64)   | -      | -            | -                           |
-    | price          | DecimalField    | -      | -            | -                           |
-    | paid           | DecimalField    | -      | -            | -                           |
-    | item_url       | URLField(1024)  | -      | -            | -                           |
+    | status         | IntegerField    | -      | -            | -                           |
+    | order_number     | CharField(32)    | -      | -            | -                           |
+    | buyer_profile  | **ForeignKey**  | -      | Many to one  | UserProfile Model           |
+    | full_name         | CharField(50)    | -      | -            | -                           |
+    | email         | EmailField(254)    | -      | -            | -                           |
+    | phone_number      | CharField(20)    | -      | -            | -                           |
+    | country      | CountryField    | -      | -            | -                           |
+    | date      | DateTimeField    | -      | -            | -                           |
+    | order_total      | DecimalField(10)    | -      | -            | -                           |
+    | grand_total      | DecimalField(10)    | -      | -            | -                           |
+    | stripe_pid      | CharField(254)    | -      | -            | -                           |
     | gateway        | IntegerField    | -      | -            | -                           |
-    | timestamp      | DateTimeField   | -      | -            | -                           |
+
+### OrderLineItem Model
+??? abstract "OrderLineItem Model"
+
+    | Attribute      | Type            | Unique | Relationship | Model Linked To             |
+    |----------------|-----------------|--------|--------------|-----------------------------|
+    | order         | **ForeignKey**    | -      | Many to one       | Order Model                           |
+    | product       | **ForeignKey**    | -       | Many to one   | Product Model                  |
+    | service       | **ForeignKey**    | -       | Many to one   | Service Model                  |
+    | quantity       | IntegerField    | -       | -   | -                  |
+    | lineitem_total       | DecimalField(6)    | -       | -   | -                  |
+
+### OrderDeletionRecord Model
+??? abstract "OrderDeletionRecord Model"
+
+    | Attribute      | Type            | Unique | Relationship | Model Linked To             |
+    |----------------|-----------------|--------|--------------|-----------------------------|
+    | timestamp         | DateTimeField    | -      | -            | -                           |
+    | initiated_by         | **ForeignKey**    | -      | Many to one      |  UserProfile Model     |
 
 
 ## Developer Experience
