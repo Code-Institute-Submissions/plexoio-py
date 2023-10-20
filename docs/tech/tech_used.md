@@ -4,6 +4,7 @@ Every project, including ours, relies on a blend of tools and methodologies to g
 
 ### Development Tools
 
+0. **[Installed Libraries](https://github.com/plexoio/py/blob/main/requirements.txt)**
 1. **[Django](https://www.djangoproject.com/)**: A Python framework for rapid web app development with concise code.
 2. **[jQuery](https://jquery.com/)**: A JavaScript library simplifying HTML traversal, manipulation, event handling, and animations.
 3. **[Gitpod](https://gitpod.io/plexoio)**: Our primary IDE with features like auto-save.
